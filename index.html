@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<title>Paul Allen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Bio</a>
+  <a href="#" class="w3-bar-item w3-button">Classes</a>
+  <a href="#" class="w3-bar-item w3-button">Service</a>
+  <a href="#" class="w3-bar-item w3-button">Links</a>  
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+       <h4>Florida Gulf Coast University</br>
+       U.A. Whitaker College of Engineering</br>
+       Department of Computing and Software Engineering</h4>
+       <h1 class="w3-xxxlarge w3-animate-bottom">Paul Allen</h1>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Faculty Information</h3><br>
+  <i class="fas fa-hat-wizard w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Inst II, FGCU, Comp &AMP; Soft Eng, 2020</p>
+  <p>Adj Inst, FGCU, since 2015</p>
+  <p>MBA, FGCU, 2014</p>
+  <p>BS, CIS, FGCU, 1998</p>
+  </div>
+</div>
+
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Courses</h3><br>
+  <i class="fas fa-school w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>COP 2006 Programming I</p>
+  <p>COP 2001 Programming Methods</p>
+  <p>COP 3003 Programming II (OOP)</p>
+  <p>CDA 3104 Comp Orgn &AMP; Assemb Lang</p>
+  <p>CDA 3200 Digital Sys &AMP Arch</p>
+  <p>CDA 3710 Intro to Data Eng</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Service</h3><br>
+  <i class="fas fa-hat-cowboy w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>FA Advisor - Software Engineering Club</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <h3>Florida Gulf Coast University</h3>
+  <p>U.A. Whitaker Deptartment of <a href="https://www.fgcu.edu/eng/softwareengineering/">Computing &AMP; Software Engineering</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
