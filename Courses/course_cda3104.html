@@ -9,6 +9,7 @@
           integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
     <link href="../pallenfgcu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="application/javascript" src="../pallenfgcu.js"></script>
 </head>
 
@@ -28,7 +29,7 @@
 <header class="w3-container w3-theme w3-padding" id="myHeader">
     <i class="fa fa-bars w3-xlarge w3-button w3-theme" onclick="w3_open()"></i>
     <div class="w3-center">
-        <h1 class="w3-xxxlarge w3-animate-bottom">COP 2006 Programming I - 3 credit(s)</h1>
+        <h1 class="w3-xxxlarge w3-animate-bottom">CDA 3104 Comp. Orgn. &amp; Assmb. Lang. Prog. - 3 credit(s)</h1>
     </div>
 </header>
 
@@ -42,85 +43,101 @@
         <!-- Syllabus sections -->
         <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Course Catalog Description:</h1>
-                <p>Introductory computer programming concepts and problem solving skills are learned using a modern
-                    programming language. Principles of good programming style are emphasized. This course is delivered in
-                    C++/Java unless noted otherwise.</p>
+                <h1 class="w3-large w3-text-teal">Course Catalog Description</h1>
+                <p>Covers the basic concepts of computer organization using a computer platform or a simulator and the
+                    corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory
+                    models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Prerequisites:</h1>
-                <p>COP 1500 for level Undergraduate with minimum grade of C</p>
+                <h1 class="w3-large w3-text-teal">Prerequisites</h1>
+                <p>(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with
+                    minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and
+                    COP 2006 for level Undergraduate with minimum grade of C</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Required Material:</h1>
+                <h1 class="w3-large w3-text-teal">Required Material</h1>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-large w3-text-teal">Textbook:</h1>
-                    <p>The course uses an open source textbook available from <b><a href="https://www.learncpp.com">LearnCPP.com</a></b>.</p>
+                    <p><b>The AVR Microcontroller and Embedded Systems Using Assembly and C: Using Arduino Uno and Atmel Studio</b> 1st Edition
+                        by Sepehr Naimi  (Author), Sarmad Naimi (Author), Muhammad Ali Mazidi (Author), ISBN: 978-0997925968.</p>
+                    <p>Book website: <a href="https://nicerland.com/avr/" target="_blank">NicerLand.com/avr</a> for additional free online content.
+                        The site contains Chapter 0 and Appendixes A-I which are not included with the book, along with PowerPoint slides, source code, and labs.</p>
                 </div>
                 <div class="w3-container w3-left-align">
-                    <h1 class="w3-large w3-text-teal">Reference:</h1>
-                    <p>Use site <b><a href="https://www.cplusplus.com">cplusplus.com</a></b> to look up standard C/C++ libraries, examples and tutorials.</p>
-                </div>
-                <div class="w3-container w3-left-align">
-                    <h1 class="w3-large w3-text-teal">Software:</h1>
-                    <p>The class will utilize <b>CLion</b> from <b><a href="https://www.jetbrains.com/">JetBrains.com</a></b> as a C/C++ development suite (IDE).
-                        CLion software is available in the FGCU AppsAnywhere catalog for download on classroom PCs.
-                        It is recommended that you bring a laptop to class and install CLion on it.  A walkthrough will be provided
+                    <h1 class="w3-large w3-text-teal">Software</h1>
+                    <p>The class will utilize <b>MPLAB X IDE</b> from <b><a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide" target="_blank">Microchip.com</a></b>.
+                        At this time, the FGCU AppsAnywhere catalog has <b>Microchip Developer Studio</b> which can also be used, but on Windows only.
+                        It is recommended that you bring a laptop to class and install MPLAB X on it.  A walkthrough will be provided
                         for downloading and configuring the software.</p>
+                    <p>Additional Software will include:
+                        <ul>
+                            <li><b><a href="https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers" target="_blank">AVR-GCC</a></b> - GNU opensource C/C++ cross-compiler, Assembler and linker.</li>
+                            <li><b><a href="https://www.arduino.cc" target="_blank">Arduino IDE</a></b> for loading programs on an Arduino UNO R3.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="w3-container w3-left-align">
+                    <h1 class="w3-large w3-text-teal">Hardware</h1>
+                    <p>You will be required to purchase an <b>Arduino UNO R3 Kit</b>:<br>
+                        (These can be found on Amazon for $27 - $60)
+                        <ul>
+                            <li>ELEGOO UNO Project Basic Starter Kit with Tutorial and UNO R3 Compatible with Arduino IDE</li>
+                            <li>REXQualis Super Starter Kit based on Arduino UNO R3 with Tutorial and Controller Board Compatible with Arduino IDE</li>
+                            <li>Smraza Super Starter Kit Project Kit with Breadboard, Power Supply, Jumper Wires, Resistors, LED, LCD 1602, Sensors, Detailed Tutorial for Project, Compatible with Arduino UNO R3 Project</li>
+                            <li>OSOYOO Based on Arduino with Controller Board and USB Cable Compatible with UNO R3 Including Sample Projects Programming with IDE</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Learning Outcomes:</h1>
-                <p>Introductory computer programming concepts and problem solving skills are learned using a modern
-                    programming language. Principles of good programming style are emphasized. This course is delivered
-                    in C++ unless noted otherwise. Specifically, the student will acquire:
+                <h1 class="w3-large w3-text-teal">Learning Outcomes</h1>
+                <p>Upon successful completion of this course, the student will be able to:
                     <ul>
-                        <li>the ability to identify and formulate simple computational problems</li>
-                        <li>an understanding of fundamental principles of programming</li>
-                        <li>an understanding of the programming life cycle</li>
-                        <li>the ability to apply programming principles to solve simple computational problems</li>
-                        <li>the ability to evaluate the program's quality</li>
+                        <li>understand the basic microcontroller functionality and how it's used in embedded systems.</li>
+                        <li>be able to write assembly language code for the ATMEL AVR family of microcontrollers.</li>
+                        <li>be able to program the various microcontroller features such as hardware interrupts, timers, I/O ports and serial communications.</li>
+                        <li>be able to design circuitry using simple electronics such as using resisters, capacitors, transistors, diodes, relays, and a power supply in the context of embedded systems.</li>
                     </ul>
                 </p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Instructional Methods:</h1>
+                <h1 class="w3-large w3-text-teal">Instructional Methods</h1>
                 <p>This is a face-to-face course with lectures, instructor led programming examples, and in-class labs.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Attendance:</h1>
+                <h1 class="w3-large w3-text-teal">Attendance</h1>
                 <p>Attendance is mandatory for all classes. Attendance will be taken and will count towards participation credit.
                 Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
                 for in-class assignments.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Topics / Tentative Schedule:</h1>
+                <h1 class="w3-large w3-text-teal">Topics / Tentative Schedule</h1>
                 <div class="w3-card w3-twothirds w3-padding">
                     <ul class="w3-ul">
-                        <li>Intro to C++, IDE, Compiler</li>
-                        <li>Basics: Functions and Files</li>
-                        <li>Data Types, Arrays and Strings</li>
+                        <li>Computer Architecture and AVR MCU</li>
+                        <li>Number systems, Binary Arithmetic & Signed Numbers </li>
+                        <li>Basic AVR Assembly Programming</li>
                         <li>Exam 1</li>
-                        <li>Control Flow - if, switch</li>
-                        <li>Control Flow - while, for, do while</li>
+                        <li>Conditional Branching (if and loops), Time Delays</li>
+                        <li>DC Circuits and Components</li>
+                        <li>AVR I/O Programming</li>
                         <li>Exam 2</li>
-                        <li>Debugging</li>
-                        <li>Functions and modular programming</li>
-                        <li>Structures and Enums</li>
-                        <li>Intro to pointers</li>
+                        <li>Advanced AVR Programming (Functions)</li>
+                        <li>Analog and Digital Sensors and Components</li>
+                        <li>PWM Programming and Motors</li>
                         <li>Exam 3</li>
                     </ul>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Assessment:</h1>
+                <h1 class="w3-large w3-text-teal">Assessment</h1>
                 <p>There is no grace period for late submission of assignments. All assignments with due dates and times will be posted on Canvas. Alternate schedules can be arranged ahead of time with instructor approval.</p>
                 <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-twothird">
                     <div class="w3-card w3-padding">
@@ -132,8 +149,8 @@
                         <p>Written exams taken in class.</p>
                     </div>
                     <div class="w3-card w3-padding">
-                        <h1 class="w3-large w3-text-teal">Project (15%):</h1>
-                        <p>Individual project for a medium program worked outside of class.</p>
+                        <h1 class="w3-large w3-text-teal">Group Project (15%):</h1>
+                        <p>Group project combining AVR Assembly programming with basic DC circuits worked outside of class.</p>
                     </div>
                     <div class="w3-card w3-padding">
                         <h1 class="w3-large w3-text-teal">Participation (10%):</h1>
@@ -143,7 +160,7 @@
             </div>
 
             <div class="w3-container w3-left-align w3-quarter w3-small">
-                <h1 class="w3-large w3-text-teal">Grading:</h1>
+                <h1 class="w3-large w3-text-teal">Grading</h1>
                 <table class="w3-table">
                     <tr>
                         <th class="w3-center">GRADE</th>
@@ -194,7 +211,7 @@
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Working Independently:</h1>
+                <h1 class="w3-large w3-text-teal">Working Independently</h1>
                 <p>Students are to work independently on all non-group assignments. It is cheating to see other
                     classmate's work or let other classmates see yours. This does not mean you cannot assist or discuss assignments with your classmates.</p>
                 <h1 class="w3-large w3-text-red">***&nbsp;IMPORTANT&nbsp;***</h1>
@@ -204,10 +221,19 @@
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-large w3-text-teal">Communication:</h1>
+                <h1 class="w3-large w3-text-teal">Communication</h1>
                 <p>All course related communication should be via <b>Canvas message</b>. Each student is responsible for checking his/her
                     FGCU email at least once a day. The instructor will respond to your emails within 24 hours except
                     weekends and holidays.</p>
+            </div>
+
+            <div class="w3-container w3-left-align">
+                <h1 class="w3-large w3-text-teal">University Resources and Policy Statements</h1>
+                <!-- Current University Statements -->
+                <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
+                    <div class="w3-card w3-padding" id="policy_statements"></div>
+                    <script>$("#policy_statements").load("Common/syllabus_guidelines.html");</script>
+                </div> <!-- Current University Statements -->
             </div>
 
         </div> <!-- Syllabus sections -->
@@ -215,6 +241,7 @@
     </div><!-- Syllabus card -->
 
 </div><!-- Syllabus body -->
+
 
 
 
