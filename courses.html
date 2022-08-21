@@ -8,17 +8,17 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
           integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="Common/pallenfgcu.css" rel="stylesheet">
-    <script type="application/javascript" src="Common/pallenfgcu.js"></script>
+    <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+    <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
 </head>
 
 <body>
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="mySidebar" style="display:none">
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="nav_sidebar" style="display:none">
     <h1 class="w3-xlarge w3-text-theme">Site Navigation</h1>
-    <button class="w3-bar-item w3-button w3-xlarge" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+    <button class="w3-bar-item w3-button w3-xlarge" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
     <a class="w3-bar-item w3-button w3-xlarge" href="index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-xlarge" href="#">CV</a>
+    <a class="w3-bar-item w3-button w3-xlarge" href="faculty_cv.html">CV</a>
     <a class="w3-bar-item w3-button w3-xlarge" href="courses.html">Courses</a>
     <a class="w3-bar-item w3-button w3-xlarge" href="#">Service</a>
     <a class="w3-bar-item w3-button w3-xlarge" href="#">Links</a>
@@ -26,7 +26,7 @@
 
 <!-- Header -->
 <header class="w3-container w3-theme w3-padding" id="myHeader">
-    <i class="fa fa-bars w3-xlarge w3-button w3-theme" onclick="w3_open()"></i>
+    <i class="fa fa-bars w3-xlarge w3-button w3-theme" onclick="nav_sidebar_open()"></i>
     <div class="w3-center">
         <h1 class="w3-xxxlarge w3-animate-bottom">Courses</h1>
     </div>
