@@ -9,7 +9,7 @@ $(function() {
    });
 });
 
-// w3_open
+// w3_close
 $(function() {
     $(document).on('click','#navSidebarClose', function(e) {
         $("#navSidebar").style.display = "none";
