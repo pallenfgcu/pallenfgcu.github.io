@@ -1,7 +1,7 @@
 // Side navigation
 // w3_open
 $(function() {
-   $(document).on('click','#divSidebar', function(e) {
+   $(document).on('click','#btnSidebar', function(e) {
        $("#navSidebar").style.width="25%";
        $("#navSidebar").style.fontSize = "40px";
        $("#navSidebar").style.paddingTop = "10%";
