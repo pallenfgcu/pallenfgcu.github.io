@@ -15,14 +15,8 @@
 
 <body>
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="mySidebar" style="display:none">
-    <h1 class="w3-xlarge w3-text-theme">Site Navigation</h1>
-    <button class="w3-bar-item w3-button w3-xlarge" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-    <a class="w3-bar-item w3-button w3-xlarge" href="../index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-xlarge" href="#">CV</a>
-    <a class="w3-bar-item w3-button w3-xlarge" href="../courses.html">Courses</a>
-    <a class="w3-bar-item w3-button w3-xlarge" href="#">Service</a>
-    <a class="w3-bar-item w3-button w3-xlarge" href="#">Links</a>
+<script>$("#mainSidebar").load("../Common/nav_sidebar.html");</script>
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="mainSidebar" style="display:none">
 </nav>
 
 <!-- Header -->
@@ -231,8 +225,8 @@
                 <h1 class="w3-large w3-text-teal">University Resources and Policy Statements</h1>
                 <!-- Current University Statements -->
                 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
-                    <div class="w3-card w3-padding" id="policy_statements"></div>
                     <script>$("#policy_statements").load("Common/syllabus_guidelines.html");</script>
+                    <div class="w3-card w3-padding" id="policy_statements"></div>
                 </div> <!-- Current University Statements -->
             </div>
 
