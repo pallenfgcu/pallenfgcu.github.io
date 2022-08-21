@@ -1,12 +1,17 @@
 // Side navigation
-function w3_open() {
-    var x = document.getElementById("navSidebar");
-    x.style.width = "100%";
-    x.style.fontSize = "40px";
-    x.style.paddingTop = "10%";
-    x.style.display = "block";
-}
+// w3_open
+$(function() {
+   $(document).on('click','#divSidebar', function(e) {
+       $("#navSidebar").style.width="25%";
+       $("#navSidebar").style.fontSize = "40px";
+       $("#navSidebar").style.paddingTop = "10%";
+       $("#navSidebar").style.display = "block";
+   });
+});
 
-function w3_close() {
-    document.getElementById("navSidebar").style.display = "none";
-}
+// w3_open
+$(function() {
+    $(document).on('click','#navSidebarClose', function(e) {
+        $("#navSidebar").style.display = "none";
+    });
+});
