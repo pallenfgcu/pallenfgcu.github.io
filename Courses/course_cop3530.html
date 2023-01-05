@@ -29,7 +29,7 @@
 <header class="w3-container w3-theme w3-padding" id="myHeader">
     <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
     <div class="w3-center">
-        <h1 class="w3-xxlarge w3-animate-bottom">CDA 3104 Comp. Orgn. &amp; Assmb. Lang. Prog. - 3 credit(s)</h1>
+        <h1 class="w3-xxlarge w3-animate-bottom">COP 3530 Data Structures &amp; Algorithms - 3 credit(s)</h1>
     </div>
 </header>
 
@@ -44,59 +44,37 @@
         <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Course Catalog Description</h1>
-                <p>Covers the basic concepts of computer organization using a computer platform or a simulator and the
-                    corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory
-                    models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.</p>
+                <p>Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs)
+                    are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees.
+                    Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.</p>
             </div>
 
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Prerequisites</h1>
-                <p>(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with
-                    minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and
-                    COP 2006 for level Undergraduate with minimum grade of C</p>
+                <p>COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C</p>
             </div>
 
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Required Material</h1>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-medium w3-text-teal">Textbook:</h1>
-                    <p><b>The AVR Microcontroller and Embedded Systems Using Assembly and C: Using Arduino Uno and Atmel Studio</b> 1st Edition
-                        by Sepehr Naimi  (Author), Sarmad Naimi (Author), Muhammad Ali Mazidi (Author), ISBN: 978-0997925968.</p>
-                    <p>Book website: <a href="https://nicerland.com/avr/" target="_blank">NicerLand.com/avr</a> for additional free online content.
-                        The site contains Chapter 0 and Appendixes A-I which are not included with the book, along with PowerPoint slides, source code, and labs.</p>
+                    <p><b>Data Structures Algorithm Analysis in C++</b> 4th Edition by Mark Allen Weiss, ISBN: 9780132847377</p>
                 </div>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-medium w3-text-teal">Software</h1>
-                    <p><b><a href="https://www.microchip.com/en-us/tools-resources/develop/microchip-studio" target="_blank">Microchip Studio for AVR and SAM Devices</a></b>
-                    <p>Additional Software:
-                        <ul>
-                            <li><b><a href="https://www.arduino.cc" target="_blank">Arduino IDE</a></b></li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="w3-container w3-left-align">
-                    <h1 class="w3-medium w3-text-teal">Hardware</h1>
-                    <p>You will be required to purchase an <b>Arduino UNO R3 Kit</b>:<br>
-                        (These can be found on Amazon for $27 - $60)
-                        <ul>
-                            <li>ELEGOO UNO Project Basic Starter Kit with Tutorial and UNO R3 Compatible with Arduino IDE</li>
-                            <li>REXQualis Super Starter Kit based on Arduino UNO R3 with Tutorial and Controller Board Compatible with Arduino IDE</li>
-                            <li>Smraza Super Starter Kit Project Kit with Breadboard, Power Supply, Jumper Wires, Resistors, LED, LCD 1602, Sensors, Detailed Tutorial for Project, Compatible with Arduino UNO R3 Project</li>
-                            <li>OSOYOO Based on Arduino with Controller Board and USB Cable Compatible with UNO R3 Including Sample Projects Programming with IDE</li>
-                        </ul>
-                    </p>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Learning Outcomes</h1>
                 <p>Upon successful completion of this course, the student will be able to:
-                    <ul>
-                        <li>understand the basic microcontroller functionality and how it's used in embedded systems.</li>
-                        <li>be able to write assembly language code for the ATMEL AVR family of microcontrollers.</li>
-                        <li>be able to program the various microcontroller features such as hardware interrupts, timers, I/O ports and serial communications.</li>
-                        <li>be able to design circuitry using simple electronics such as using resisters, capacitors, transistors, diodes, relays, and a power supply in the context of embedded systems.</li>
-                    </ul>
+                <ul>
+                    <li>Be able to implement and apply basic data structures: linked-lists, stacks, queues, and trees.</li>
+                    <li>Be able to use recursion to solve complex problems.</li>
+                    <li>Understand different searching and sorting algorithms: tree searching, heap sort, quick sort, etc.</li>
+                    <li>Understand the big-O notation.</li>
+                    <li>Be able to compare different searching and sorting algorithms using the big-O notation.</li>
+                </ul>
                 </p>
             </div>
 
@@ -108,27 +86,28 @@
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Attendance</h1>
                 <p>Attendance is mandatory for all classes. Attendance will be taken and will count towards participation credit.
-                Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
-                for in-class assignments.</p>
+                    Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
+                    for in-class assignments.</p>
             </div>
 
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule</h1>
                 <div class="w3-card w3-twothirds w3-padding">
                     <ul class="w3-ul">
-                        <li>Computer Architecture and AVR MCU</li>
-                        <li>Number systems, Binary Arithmetic & Signed Numbers </li>
-                        <li>Basic AVR Assembly Programming</li>
-                        <li>Conditional Branching (if and loops), Time Delays</li>
+                        <li>Review: Arrays, pointers, references; Complexity</li>
+                        <li>Recursion</li>
+                        <li>Lists</li>
+                        <li>Stacks</li>
+                        <li>Queues</li>
                         <li>Exam 1</li>
-                        <li>DC Circuits and Components</li>
-                        <li>AVR I/O Programming</li>
-                        <li>Advanced AVR Programming</li>
-                        <li>AVR Timer Programming</li>
-                        <li>AVR Interrupt Programming</li>
+                        <li>Binary Trees</li>
+                        <li>Heaps</li>
+                        <li>Sorting</li>
                         <li>Exam 2</li>
-                        <li>Various Topics: Analog and Digital Sensors, Motors, PWM, SPI, etc.</li>
-                        <li>Group Project Demonstrations</li>
+                        <li>Hashing</li>
+                        <li>Graph Algorithms</li>
+                        <li>Big-O Notation</li>
+                        <li>Exam 3</li>
                     </ul>
                 </div>
             </div>
@@ -138,16 +117,12 @@
                 <p>There is no grace period for late submission of assignments. All assignments with due dates and times will be posted on Canvas. Alternate schedules can be arranged ahead of time with instructor approval.</p>
                 <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-twothird">
                     <div class="w3-card w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Assignments (45%):</h1>
+                        <h1 class="w3-medium w3-text-teal">Assignments (50%):</h1>
                         <p>Individual problems and small programs worked outside of class.</p>
                     </div>
                     <div class="w3-card w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Exams (30%):</h1>
+                        <h1 class="w3-medium w3-text-teal">Exams (40%):</h1>
                         <p>Written exams taken in class.</p>
-                    </div>
-                    <div class="w3-card w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Group Project (15%):</h1>
-                        <p>Group project combining AVR Assembly programming with basic DC circuits worked outside of class.</p>
                     </div>
                     <div class="w3-card w3-padding">
                         <h1 class="w3-medium w3-text-teal">Participation (10%):</h1>
