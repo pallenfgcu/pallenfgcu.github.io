@@ -31,6 +31,20 @@
     <div class="w3-center">
         <h1 class="w3-xxlarge w3-animate-bottom">CDA 3104 Comp. Orgn. &amp; Assmb. Lang. Prog. - 3 credit(s)</h1>
     </div>
+    <div class="w3-right-align">
+        <script>
+            function printVersion() {
+                $('.w3-card').each(function(i) {
+                    $(this).addClass("no-w3-card").removeClass("w3-card");
+                });
+                window.print();
+                $('.no-w3-card').each(function(i) {
+                    $(this).addClass("w3-card").removeClass("no-w3-card");
+                });
+            }
+        </script>
+        <a href="javascript:printVersion();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
+    </div>
 </header>
 
 
