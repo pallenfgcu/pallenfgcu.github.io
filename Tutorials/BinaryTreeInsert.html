@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paul Allen FGCU</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link href="https://www.w3schools.com/lib/w3-theme-teal.css" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="application/javascript" src="/Tutorials/assets/binary_search_tree.js"></script>
+  <script type="application/javascript" src="/Tutorials/assets/bst_insert.js"></script>
+  <script type="application/javascript" src="/Tutorials/assets/d3_binary_search_tree.js"></script>
+  <link href="assets/binary_search_tree.css" rel="stylesheet">
+  <script>
+
+
+    let code;
+
+    // Main Program
+    $(document).ready(function(){
+      code = new BstInsert('#bst_code', 500, 450);
+    });
+
+    function nextClick() {
+      $("#bst_node_next").text('Next');
+      code.step();
+    }
+
+  </script>
+
+</head>
+<body>
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="nav_sidebar" style="display:none">
+  <h1 class="w3-large w3-text-theme">Site Navigation</h1>
+  <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
+  <a class="w3-bar-item w3-button w3-large" href="/index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-large" href="/faculty_cv.html">CV</a>
+  <a class="w3-bar-item w3-button w3-large" href="/courses.html">Courses</a>
+  <a class="w3-bar-item w3-button w3-large" href="#">Service</a>
+  <a class="w3-bar-item w3-button w3-large" href="#">Links</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
+  <div class="w3-center">
+    <h1 class="w3-large w3-animate-bottom">Binary Search Tree ADT - Insert</h1>
+  </div>
+</header>
+
+<div class="w3-row w3-small w3-margin">
+  <div class="w3-card">
+    <div class="w3-container w3-cell w3-padding" style="min-width: 400px;">
+      <div id="bst_main_canvas" class="bst_code w3-border w3-padding-small"></div>
+    </div>
+    <div class="w3-container w3-cell w3-cell-middle bst_code_desc">
+      <p>The insert method of a Binary Search Tree (BST) appends new nodes to the tree. Since a BST is made
+        up of Nodes that can at most have 2 children, a left and a right Node, the new node is appended to a
+        specific root node of a subtree that has a left or right pointer that is available (null). The correct
+        parent of the new node is selected by traversing down the hierarchical structure of the tree, starting at the
+        root node at the top of the tree each time, and then using the following logic:</p>
+      <ul>
+        <li>if the new node's value is less than (or equal to) the current subtree root, then move to the left pointer</li>
+        <li>else move to the right pointer</li>
+      </ul>
+      <p>The "or equal to" is included in the expression if duplicate values are allowed in the tree, or excluded to
+        prevent (ignore) duplicates.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-small w3-margin">
+  <div class="w3-card">
+    <div class="w3-row w3-padding">
+      <div class="w3-container w3-cell">
+        <button id="bst_node_next" onclick="nextClick()">Start</button>
+      </div>
+      <div class="w3-container w3-cell w3-padding">
+        <div id="bst_code_desc" class=" bst_code_desc" style="min-height: 35px"></div>
+      </div>
+    </div>
+    <div class="w3-row">
+      <div class="w3-container w3-cell w3-padding" style="min-width: 480px; min-height: 350px;">
+        <div id="bst_code" class="bst_code w3-border w3-padding-small"></div>
+      </div>
+      <div class="w3-container w3-cell w3-padding" style="min-width: 400px; min-height: 350px;">
+        <div id="bst_canvas" class=" w3-border w3-padding-small"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
+    <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">U.A. Whitaker Department of Computing & Software
+      Engineering</a></h5>
+  <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
+    <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
+    <a class="w3-text-white" href="#myHeader"><span class="w3-large">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>
