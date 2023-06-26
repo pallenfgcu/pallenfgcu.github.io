@@ -29,7 +29,7 @@
 <header class="w3-container w3-theme w3-padding" id="myHeader">
     <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
     <div class="w3-center">
-        <h1 class="w3-xxlarge w3-animate-bottom">COP 3530 Data Structures &amp; Algorithms - 3 credit(s)</h1>
+        <h1 id="header_course_title" class="w3-xxlarge w3-animate-bottom"></h1>
     </div>
     <div class="w3-right-align">
         <script>
@@ -50,6 +50,9 @@
 
 <!-- Syllabus body -->
 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
+
+    <div id="section_info" class="w3-card w3-padding w3-margin-bottom"></div>
+    <div id="contact_info" class="w3-card w3-padding w3-margin-bottom"></div>
 
     <!-- Syllabus card -->
     <div class="w3-card w3-padding">
@@ -118,8 +121,8 @@
                 <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule</h1>
                 <div class="w3-card w3-twothirds w3-padding">
                     <ul class="w3-ul">
-                        <li>Review: Arrays, pointers, references; Complexity</li>
-                        <li>Recursion</li>
+                        <li>Review: Arrays, pointers, references</li>
+                        <li>Recursion, Big-O Notation</li>
                         <li>Lists</li>
                         <li>Stacks</li>
                         <li>Queues</li>
@@ -130,7 +133,6 @@
                         <li>Exam 2</li>
                         <li>Hashing</li>
                         <li>Graph Algorithms</li>
-                        <li>Big-O Notation</li>
                         <li>Exam 3</li>
                     </ul>
                 </div>
@@ -239,7 +241,10 @@
 </div><!-- Syllabus body -->
 
 
-
+<script type="module">
+    import {load} from "./syllabi.js";
+    load("202305", "51977");
+</script>
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark">

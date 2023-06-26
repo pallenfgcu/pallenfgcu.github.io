@@ -23,3 +23,26 @@ a:hover {
     /* On mouse-over, add a deeper shadow */
     box-shadow: 0 8px 16px 0 rgba(0,0,255,0.2);
 }
+
+.syllabi_info h1 {
+    font-size: small;
+    font-weight: bold;
+    text-align: left;
+}
+
+.syllabi_info h2 {
+    font-size: smaller;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.syllabi_info th {
+    font-size: x-small;
+    text-align: right;
+}
+
+.syllabi_info td {
+    font-size: x-small;
+    text-align: left;
+}
