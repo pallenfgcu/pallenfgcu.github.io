@@ -9,7 +9,7 @@ function loadContactInfo() {
     const divInfo = $('#contact_info');
     const divTitle = $(`<h1 class="w3-medium w3-text-teal">Instructor Information</h1>`);
     divInfo.append(divTitle);
-    const divTab = $('<table>', {class: 'syllabi_info'});
+    const divTab = $('<table>', {class: 'w3-small syllabi_info'});
     divTab.append(tableInfoRow('Instructor:', data.name));
     divTab.append(tableInfoRow('Title:', data.title));
     divTab.append(tableInfoRow('Office:', data.office));
@@ -27,7 +27,7 @@ function loadSectionInfo(term, crn) {
 
     const divTitle = $(`<h1 class="w3-medium w3-text-teal">Course Information</h1>`);
     divInfo.append(divTitle);
-    const divTab = $('<table>', {class: 'syllabi_info'});
+    const divTab = $('<table>', {class: 'w3-small syllabi_info'});
     divTab.append(tableInfoRow('Term:', term));
     divTab.append(tableInfoRow('CRN:', crn));
     const course = courseInfo[crn].course;
@@ -39,9 +39,9 @@ function loadSectionInfo(term, crn) {
     divTab.append(tableInfoRow('Days/Times:', courseInfo[crn].days + ' / ' + courseInfo[crn].times));
     divInfo.append(divTab);
 
-    const divOfficeHrs = $(`<h2 class="w3-small w3-text-teal">Office Hours</h2>`);
+    const divOfficeHrs = $(`<h2 class="w3-medium w3-text-teal">Office Hours</h2>`);
     divInfo.append(divOfficeHrs);
-    const divOfficeHrsTab = $('<table>', {class: 'syllabi_info'});
+    const divOfficeHrsTab = $('<table>', {class: 'w3-small syllabi_info'});
     $.each(sectionInfo[term].office_hours, function(index, value) {
         divOfficeHrsTab.append(tableInfoRow('Days/Times:', `${value.days} / ${value.hours}`));
     });
