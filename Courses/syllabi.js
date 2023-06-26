@@ -7,7 +7,7 @@ export const load=(term, crn)=>{
 
 function loadContactInfo() {
     const divInfo = $('#contact_info');
-    const divTitle = $(`<h1>Instructor Information</h1>`);
+    const divTitle = $(`<h1 class="w3-medium w3-text-teal">Instructor Information</h1>`);
     divInfo.append(divTitle);
     const divTab = $('<table>', {class: 'syllabi_info'});
     divTab.append(tableInfoRow('Instructor:', data.name));
@@ -25,7 +25,7 @@ function loadSectionInfo(term, crn) {
     const courseInfo = sectionInfo[term].courses.find(courses => crn in courses);
     const divInfo = $('#section_info');
 
-    const divTitle = $(`<h1>Course Information</h1>`);
+    const divTitle = $(`<h1 class="w3-medium w3-text-teal">Course Information</h1>`);
     divInfo.append(divTitle);
     const divTab = $('<table>', {class: 'syllabi_info'});
     divTab.append(tableInfoRow('Term:', term));
@@ -39,7 +39,7 @@ function loadSectionInfo(term, crn) {
     divTab.append(tableInfoRow('Days/Times:', courseInfo[crn].days + ' / ' + courseInfo[crn].times));
     divInfo.append(divTab);
 
-    const divOfficeHrs = $(`<h2>Office Hours</h2>`);
+    const divOfficeHrs = $(`<h2 class="w3-small w3-text-teal">Office Hours</h2>`);
     divInfo.append(divOfficeHrs);
     const divOfficeHrsTab = $('<table>', {class: 'syllabi_info'});
     $.each(sectionInfo[term].office_hours, function(index, value) {

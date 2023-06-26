@@ -25,13 +25,13 @@ a:hover {
 }
 
 .syllabi_info h1 {
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
     text-align: left;
 }
 
 .syllabi_info h2 {
-    font-size: smaller;
+    font-size: x-small;
     font-weight: bold;
     text-align: left;
 }
