@@ -1,11 +1,13 @@
-import data from './courses.json' assert { type: 'json' };
-
 export const load=(term, crn)=>{
-    loadContactInfo();
-    loadSectionInfo(term, crn);
+    fetch("./courses.json")
+        .then((res) => res.json())
+        .then((data) => {
+            loadContactInfo(data);
+            loadSectionInfo(data, term, crn);
+        });
 }
 
-function loadContactInfo() {
+function loadContactInfo(data) {
     const divInfo = $('#contact_info');
     const divTitle = $(`<h1 class="w3-medium w3-text-teal">Instructor Information</h1>`);
     divInfo.append(divTitle);
@@ -20,7 +22,7 @@ function loadContactInfo() {
 } // loadContactInfo
 
 
-function loadSectionInfo(term, crn) {
+function loadSectionInfo(data, term, crn) {
     const sectionInfo = data.sections.find( terms => term in terms);
     const courseInfo = sectionInfo[term].courses.find(courses => crn in courses);
     const divInfo = $('#section_info');
