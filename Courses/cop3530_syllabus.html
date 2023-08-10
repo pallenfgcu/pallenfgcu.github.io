@@ -15,7 +15,7 @@
 
 <body>
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="nav_sidebar" style="display:none">
+<nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="nav_sidebar" style="display:none">
     <h1 class="w3-large w3-text-theme">Site Navigation</h1>
     <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
     <a class="w3-bar-item w3-button w3-large" href="/index.html">Home</a>
@@ -32,33 +32,30 @@
         <h1 id="header_course_title" class="w3-xxlarge w3-animate-bottom"></h1>
     </div>
     <div class="w3-right-align">
-        <script>
-            function printVersion() {
-                $('.w3-card').each(function() {
-                    $(this).addClass("no-w3-card").removeClass("w3-card");
-                });
-                window.print();
-                $('.no-w3-card').each(function() {
-                    $(this).addClass("w3-card").removeClass("no-w3-card");
-                });
-            }
-        </script>
-        <a href="javascript:printVersion();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
+        <a href="javascript:window.print();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
     </div>
 </header>
 
 
 <!-- Syllabus body -->
-<div class="w3-row-padding w3-margin-top w3-margin-bottom">
+<div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
 
-    <div id="section_info" class="w3-card w3-padding w3-margin-bottom"></div>
-    <div id="contact_info" class="w3-card w3-padding w3-margin-bottom"></div>
+    <div id="college_info" class="w3-padding ">
+        <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
+            <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
+            <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+        </h5>
+    </div>
 
     <!-- Syllabus card -->
-    <div class="w3-card w3-padding">
+    <div class="w3-padding">
 
         <!-- Syllabus sections -->
         <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
+
+            <div id="section_info" class="w3-padding"></div>
+            <div id="contact_info" class="w3-padding"></div>
+            
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Course Catalog Description</h1>
                 <p>Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs)
@@ -118,8 +115,15 @@
             </div>
 
             <div class="w3-container w3-left-align">
+                <h1 class="w3-medium w3-text-teal">Communication:</h1>
+                <p>All course related communication should be via <b>Canvas message</b>. Each student is responsible for checking his/her
+                    FGCU email at least once a day. The instructor will respond to your emails within 24 hours except
+                    weekends and holidays.</p>
+            </div>
+
+            <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule</h1>
-                <div class="w3-card w3-twothirds w3-padding">
+                <div class="w3-twothirds w3-padding">
                     <ul class="w3-ul">
                         <li>Review: Arrays, pointers, references</li>
                         <li>Recursion, Big-O Notation</li>
@@ -141,16 +145,28 @@
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Assessment</h1>
                 <p>There is no grace period for late submission of assignments. All assignments with due dates and times will be posted on Canvas. Alternate schedules can be arranged ahead of time with instructor approval.</p>
+
+                <div class="w3-container w3-left-align">
+                    <h1 class="w3-medium w3-text-teal">Working Independently:</h1>
+                    <p>Students are to work independently on all non-group assignments. It is cheating to see other
+                        classmate's work or let other classmates see yours. This does not mean you cannot assist or discuss assignments with your classmates.</p>
+                    <h1 class="w3-medium w3-text-red">***&nbsp;IMPORTANT&nbsp;***</h1>
+                    <p class="w3-text-red">Student submissions that contain work from another student or source will receive
+                        a zero for that assignment. A second occurrence will result in failing the class, and the academic
+                        sanction will be reported to the Dean of Students.</p>
+                </div>
+
+
                 <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-twothird">
-                    <div class="w3-card w3-padding">
+                    <div class="w3-padding">
                         <h1 class="w3-medium w3-text-teal">Assignments (50%):</h1>
                         <p>Individual problems and small programs worked outside of class.</p>
                     </div>
-                    <div class="w3-card w3-padding">
+                    <div class="w3-padding">
                         <h1 class="w3-medium w3-text-teal">Exams (40%):</h1>
                         <p>Written exams taken in class.</p>
                     </div>
-                    <div class="w3-card w3-padding">
+                    <div class="w3-padding">
                         <h1 class="w3-medium w3-text-teal">Participation (10%):</h1>
                         <p>In class quizzes and labs, attendance, and overall participation.</p>
                     </div>
@@ -159,7 +175,7 @@
 
             <div class="w3-container w3-left-align w3-quarter w3-small"> <!-- Changed grading scale -->
                 <h1 class="w3-medium w3-text-teal">Grading</h1>
-                <table class="w3-table">
+                <table class="w3-table w3-tiny">
                     <tr>
                         <th class="w3-center">GRADE</th>
                         <th class="w3-right-align">GPA</th>
@@ -214,29 +230,10 @@
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Working Independently</h1>
-                <p>Students are to work independently on all non-group assignments. It is cheating to see other
-                    classmate's work or let other classmates see yours. This does not mean you cannot assist or discuss assignments with your classmates.</p>
-                <h1 class="w3-medium w3-text-red">***&nbsp;IMPORTANT&nbsp;***</h1>
-                <p class="w3-text-red">Student submissions that contain work from another student or source, will receive
-                    a zero for that assignment. A second occurrence will result in failing the class, and the academic
-                    sanction will be reported to the Dean of Students.</p>
-            </div>
-
-            <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Communication</h1>
-                <p>All course related communication should be via <b>Canvas message</b>. Each student is responsible for checking his/her
-                    FGCU email at least once a day. The instructor will respond to your emails within 24 hours except
-                    weekends and holidays.</p>
-            </div>
-
-            <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">University Resources and Policy Statements</h1>
-                <!-- Current University Statements -->
-                <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
-                    <div class="w3-card w3-padding" id="policy_statements"></div>
-                    <script>$("#policy_statements").load("./syllabus_guidelines.html");</script>
-                </div> <!-- Current University Statements -->
+                <h1 class="w3-medium w3-text-teal">University Resources and Syllabus Policies</h1>
+                <ul>
+                    <li><a href="https://www.fgcu.edu/about/leadership/officeoftheprovost/core-syllabus-policy-statements" target="_blank">https://www.fgcu.edu/about/leadership/officeoftheprovost/core-syllabus-policy-statements</a> </li>
+                </ul>
             </div>
 
         </div> <!-- Syllabus sections -->
@@ -248,14 +245,18 @@
 
 <script type="module">
     import {load} from "./syllabi.js";
-    load("202305", "51977");
+    let params = new URL(document.location).searchParams;
+    let term = params.get("term");
+    let crn = params.get("crn")
+    load(term, crn);
 </script>
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark">
     <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
-        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">U.A. Whitaker Department of Computing & Software
-            Engineering</a></h5>
+        <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
+        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+    </h5>
     <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
         <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
         <a class="w3-text-white" href="#myHeader"><span class="w3-large">

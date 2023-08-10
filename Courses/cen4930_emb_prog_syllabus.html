@@ -15,12 +15,12 @@
 
 <body>
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="nav_sidebar" style="display:none">
+<nav class="w3-sidebar w3-bar-block  w3-animate-left w3-center no-print" id="nav_sidebar" style="display:none">
     <h1 class="w3-large w3-text-theme">Site Navigation</h1>
     <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
-    <a class="w3-bar-item w3-button w3-large" href="/index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-large" href="/faculty_cv.html">CV</a>
-    <a class="w3-bar-item w3-button w3-large" href="/courses.html">Courses</a>
+    <a class="w3-bar-item w3-button w3-large" href="../index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-large" href="#">CV</a>
+    <a class="w3-bar-item w3-button w3-large" href="../courses.html">Courses</a>
     <a class="w3-bar-item w3-button w3-large" href="#">Service</a>
     <a class="w3-bar-item w3-button w3-large" href="#">Links</a>
 </nav>
@@ -29,7 +29,7 @@
 <header class="w3-container w3-theme w3-padding no-print" id="myHeader">
     <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
     <div class="w3-center">
-        <h1 class="w3-xxlarge w3-animate-bottom">COP 3710 Intro. to Data Engineering - 3 credit(s)</h1>
+        <h1 class="w3-xxlarge w3-animate-bottom">CEN 4930 ST:Embedded Programming - 3 credit(s)</h1>
     </div>
     <div class="w3-right-align">
         <a href="javascript:window.print();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
@@ -40,7 +40,7 @@
 <!-- Syllabus body -->
 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
 
-    <div id="college_info">
+    <div id="college_info" class="w3-padding">
         <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
             <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
             <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- Syllabus card -->
-    <div>
+    <div class="">
 
         <!-- Syllabus sections -->
         <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
@@ -57,56 +57,78 @@
             <div id="contact_info" class="w3-padding"></div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Course Catalog Description</h1>
-                <p>This course covers database design and applications of database management systems in software development.
-                    It includes relational database management systems (RDBMS) and SQL, and how databases are accessed in computer programs.
-                    It also covers different data formats, i.e. XML, JSON, etc. This course will also introduce to students the application
-                    of NoSQL systems. It will explore topics related to data analysis.</p>
+                <h1 class="w3-medium w3-text-teal">Course Catalog Description:</h1>
+                <p>The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within
+                    the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding
+                    of the intricate interplay between software and hardware in embedded systems. This course delves into the
+                    practical aspects of designing, developing, and optimizing software for embedded environments, leveraging
+                    the powerful capabilities of the C++ programming language and Arduino microcontrollers.</p>
+                <p>The course is structured to equip students with the skills necessary to harness the potential of embedded systems,
+                    enabling them to design and implement software solutions that interact seamlessly with hardware components.
+                    Throughout the course, students will explore essential concepts related to process scheduling, code optimization,
+                    and programming for external input/output (I/O) devices.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Prerequisites</h1>
-                <p>COP 3530 for level Undergraduate with minimum grade of C</p>
+                <h1 class="w3-medium w3-text-teal">Prerequisites:</h1>
+                <p>COP 3003 for level Undergraduate with minimum grade of C</p>
             </div>
 
             <div class="w3-container w3-left-align">
                 <h1 class="w3-medium w3-text-teal">Required Material</h1>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-medium w3-text-teal">Textbook:</h1>
-                    <p><b>Database System Concepts</b> 7th Edition by Abraham Silberschatz, ISBN: 9780078022159</p>
+                    <p><b>The AVR Microcontroller and Embedded Systems Using Assembly and C: Using Arduino Uno and Atmel Studio</b> 1st Edition
+                        by Sepehr Naimi, Sarmad Naimi, Muhammad Ali Mazidi, ISBN: 978-0997925968.</p>
+                    <p>Book website: <a href="https://nicerland.com/avr/" target="_blank">NicerLand.com/avr<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a> for additional free online content.
+                        The site contains Chapter 0 and Appendixes A-I which are not included with the book, along with PowerPoint slides, source code, and labs.</p>
                 </div>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-medium w3-text-teal">Software</h1>
                     <ul>
-                        <li><a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a></li>
-                        <li><a href="https://www.python.org/" target="_blank">python</a></li>
+                        <li><b><a href="https://www.arduino.cc" target="_blank">Arduino IDE<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a></b></li>
+                        <li><b><a href="https://www.microchip.com/en-us/tools-resources/develop/microchip-studio" target="_blank">Microchip Studio for AVR and SAM Devices<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a></b></li>
+                    </ul>
+                </div>
+                <div class="w3-container w3-left-align">
+                    <h1 class="w3-medium w3-text-teal">Hardware</h1>
+                    You will be required to have or purchase an <b>Arduino UNO R3 Kit</b>:<br>
+                    Search Amazon for: <a href="https://www.amazon.com/s?k=arduino+starter+kit&sprefix=arduino+s%2Caps%2C102&ref=nb_sb_ss_ts-doa-p_1_9" target="_blank">Arduino Starter Kit<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a><br>
+                    Select any of these kits like the (Recommended): <b>ELEGOO UNO Project Super Starter Kit with Tutorial and UNO R3 Compatible with Arduino IDE</b>
+                    The kit should contain at a minimum:
+                    <ul>
+                        <li>Arduino UNO R3</li>
+                        <li>Breadboard</li>
+                        <li>Resistors</li>
+                        <li>LEDs</li>
+                        <li>Push buttons</li>
+                        <li>Wires</li>
+                        <li>7-Segment Display (single and 4-digit)</li>
+                        <li>One of:<ul>
+                            <li>DC motor</li>
+                            <li>Stepper Motor w/Driver Board</li>
+                            <li>Servo Motor</li>
+                        </ul></li>
+                        <li>Various additional components, ICs, Sensors, etc.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Learning Outcomes</h1>
-                Upon successful completion of this course, the student will be able to:
-                <ul>
-                    <li>Understand the principles behind the relational data model and basic information storage & retrieval (IS&amp;R) concepts.</li>
-                    <li>Understand the principles of RDBMS including normalization, relational data models, and ACID.</li>
-                    <li>Create data flows to extract and load information from text data sources onto a database.</li>
-                    <li>Be able to write and perform DDL & DML SQL Queries using both programing interfaces & database interfaces directly to support searching & retrieving information needs.</li>
-                    <li>Build backend systems which support the building of software and information applications.</li>
-                    <li>Understand the basic principles of Big Data and other data systems (data frames, SaaS, Warehouses) and the differences between them and relational databases.</li>
-                </ul>
+                <h1 class="w3-medium w3-text-teal">Learning Outcomes:</h1>
+                <p>By the end of this course, students will have developed a comprehensive skill set enabling them to confidently tackle complex challenges in the realm of embedded programming. They will be adept at creating software solutions that harmonize with hardware components, managing process scheduling, optimizing code for efficiency, and effectively programming external I/O devices. Graduates of this program will be well-prepared to contribute to industries that rely on embedded systems, such as consumer electronics, automotive, healthcare, and industrial automation.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Instructional Methods</h1>
+                <h1 class="w3-medium w3-text-teal">Instructional Methods:</h1>
                 <p>This is a face-to-face course with lectures, instructor led programming examples, and in-class labs.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Attendance</h1>
+                <h1 class="w3-medium w3-text-teal">Attendance:</h1>
                 <p>Attendance is mandatory for all classes. Attendance will be taken and will count towards participation credit.
-                    Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
-                    for in-class assignments.</p>
+                Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
+                for in-class assignments.</p>
             </div>
 
             <div class="w3-container w3-left-align">
@@ -117,27 +139,29 @@
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule</h1>
-                <div class="w3-twothirds w3-padding">
+                <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule:</h1>
+                <div class=" w3-twothirds w3-padding">
                     <ul class="w3-ul">
-                        <li>Intro to Relational Model</li>
-                        <li>Intro to SQL</li>
-                        <li>Intermediate SQL</li>
+                        <li>Introduction to Embedded Systems: An overview of embedded systems, their significance, and their role in modern technology.</li>
+                        <li>C++ Programming for Embedded Environments: Exploring the nuances of using the C++ programming language to develop efficient and reliable embedded software.</li>
+                        <li>Arduino Microcontrollers: A deep dive into Arduino platforms, including hardware architecture and programming methodologies.</li>
                         <li>Exam 1</li>
-                        <li>Database Design Using the E-R Model</li>
-                        <li>Relational Database Design</li>
-                        <li>Advanced SQL</li>
-                        <li>Intro to Python w/SQL</li>
-                        <li>Python UI Programming</li>
-                        <li>Database Application Development</li>
+                        <li>Interfacing with Hardware: Techniques for establishing communication and interaction between software and various hardware components, such as sensors, actuators, and displays.</li>
+                        <li>Process Scheduling: Understanding and implementing process scheduling mechanisms in embedded systems, ensuring optimal resource utilization.</li>
+                        <li>Real-time Constraints: Managing real-time requirements and constraints in embedded systems, emphasizing responsiveness and reliability.</li>
+                        <li>Code Optimization: Strategies for writing efficient code tailored to the limited resources of embedded systems, including memory and processing power.</li>
                         <li>Exam 2</li>
-                        <li>Group Project Demonstrations</li>
+                        <li>Input/Output Programming: Techniques for programming external I/O devices, such as GPIO pins, analog interfaces, and communication protocols (I2C, SPI, UART).</li>
+                        <li>Interrupt Handling: Exploring interrupt-driven programming, enabling rapid response to hardware events while maintaining overall system stability.</li>
+                        <li>Embedded Debugging and Testing: Methods for debugging and testing embedded software, including emulation, simulation, and hardware debugging tools.</li>
+                        <li>Project Work: Hands-on projects that challenge students to apply their knowledge to real-world scenarios, designing and implementing embedded systems with tangible applications.</li>
+                        <li>Exam 3</li>
                     </ul>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Assessment</h1>
+                <h1 class="w3-medium w3-text-teal">Assessment:</h1>
                 <p>There is no grace period for late submission of assignments. All assignments with due dates and times will be posted on Canvas. Alternate schedules can be arranged ahead of time with instructor approval.</p>
 
                 <div class="w3-container w3-left-align">
@@ -151,19 +175,19 @@
                 </div>
 
                 <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-twothird">
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Assignments (45%):</h1>
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Assignments (50%):</h1>
                         <p>Individual problems and small programs worked outside of class.</p>
                     </div>
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Exams (30%):</h1>
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Exams (20%):</h1>
                         <p>Written exams taken in class.</p>
                     </div>
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Group Project (15%):</h1>
-                        <p>Group project is a small database application with backend database and frontend user interface.</p>
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Project (20%):</h1>
+                        <p>Individual or team project worked outside of class.</p>
                     </div>
-                    <div class="w3-padding">
+                    <div class=" w3-padding">
                         <h1 class="w3-medium w3-text-teal">Participation (10%):</h1>
                         <p>In class quizzes and labs, attendance, and overall participation.</p>
                     </div>
@@ -251,7 +275,8 @@
 <footer class="w3-container w3-theme-dark no-print">
     <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
         <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
-        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a></h5>
+        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+    </h5>
     <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
         <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
         <a class="w3-text-white" href="#myHeader"><span class="w3-large">

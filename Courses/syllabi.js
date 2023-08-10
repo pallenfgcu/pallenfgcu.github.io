@@ -2,14 +2,20 @@ export const load=(term, crn)=>{
     fetch("./courses.json")
         .then((res) => res.json())
         .then((data) => {
-            loadContactInfo(data);
-            loadSectionInfo(data, term, crn);
+            if (term && crn) {
+                loadSectionInfo(data, term, crn);
+                loadContactInfo(data);
+            }
+            else {
+                hideSectionInfo();
+                hideContactInfo();
+            }
         });
 }
 
 function loadContactInfo(data) {
     const divInfo = $('#contact_info');
-    const divTitle = $(`<h1 class="w3-medium w3-text-teal">Instructor Information</h1>`);
+    const divTitle = $(`<h1 class="w3-medium w3-text-teal w3-left-align">Instructor Information</h1>`);
     divInfo.append(divTitle);
     const divTab = $('<table>', {class: 'w3-small syllabi_info'});
     divTab.append(tableInfoRow('Instructor:', data.name));
@@ -27,7 +33,7 @@ function loadSectionInfo(data, term, crn) {
     const courseInfo = sectionInfo[term].courses.find(courses => crn in courses);
     const divInfo = $('#section_info');
 
-    const divTitle = $(`<h1 class="w3-medium w3-text-teal">Course Information</h1>`);
+    const divTitle = $(`<h1 class="w3-medium w3-text-teal w3-left-align">Course Information</h1>`);
     divInfo.append(divTitle);
     const divTab = $('<table>', {class: 'w3-small syllabi_info'});
     divTab.append(tableInfoRow('Term:', term));
@@ -41,13 +47,24 @@ function loadSectionInfo(data, term, crn) {
     divTab.append(tableInfoRow('Days/Times:', courseInfo[crn].days + ' / ' + courseInfo[crn].times));
     divInfo.append(divTab);
 
-    const divOfficeHrs = $(`<h2 class="w3-medium w3-text-teal">Office Hours</h2>`);
+    const divOfficeHrs = $(`<h2 class="w3-medium w3-text-teal w3-left-align">Office Hours</h2>`);
     divInfo.append(divOfficeHrs);
     const divOfficeHrsTab = $('<table>', {class: 'w3-small syllabi_info'});
     $.each(sectionInfo[term].office_hours, function(index, value) {
         divOfficeHrsTab.append(tableInfoRow('Days/Times:', `${value.days} / ${value.hours}`));
     });
     divInfo.append(divOfficeHrsTab);
+}
+
+function hideContactInfo() {
+    const divInfo = $('#contact_info');
+    divInfo.hide();
+}
+
+
+function hideSectionInfo() {
+    const divInfo = $('#section_info');
+    divInfo.hide();
 }
 
 function tableInfoRow(label, item) {

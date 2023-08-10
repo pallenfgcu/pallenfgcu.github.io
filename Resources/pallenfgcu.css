@@ -42,3 +42,11 @@ a:hover {
 .syllabi_info td {
     text-align: left;
 }
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
