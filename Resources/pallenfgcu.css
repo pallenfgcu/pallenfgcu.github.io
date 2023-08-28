@@ -1,16 +1,35 @@
 a:link {
     text-decoration: none;
+    color: #0000FF;
 }
 
 a:visited {
     text-decoration: none;
+    color: #0000FF;
 }
 
 a:hover {
     text-decoration: none;
     text-shadow: 1px 1px 2px #FFFFFF;
-    color: #0000FF
+    color: #00BFFF;
 }
+
+.hidden_links a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden_links a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden_links a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #FFFFFF;
+    color: #0000FF;
+}
+
 
 .w3-card {
     /* Add shadows to create the "card" effect */
@@ -48,5 +67,14 @@ a:hover {
     .no-print, .no-print *
     {
         display: none !important;
+    }
+
+    img.dark {
+        filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(150%);
+        border: 2px solid #000000 !important;
+    }
+
+    .w3-container {
+        break-before: avoid;
     }
 }

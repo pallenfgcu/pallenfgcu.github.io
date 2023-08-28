@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paul Allen FGCU</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link href="https://www.w3schools.com/lib/w3-theme-teal.css" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
+</head>
+<body>
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block  w3-animate-left w3-center no-print" id="nav_sidebar" style="display:none">
+  <h1 class="w3-large w3-text-theme">Site Navigation</h1>
+  <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
+  <a class="w3-bar-item w3-button w3-large" href="../index.html">Home</a>
+  <a class="w3-bar-item w3-button w3-large" href="#">CV</a>
+  <a class="w3-bar-item w3-button w3-large" href="../courses.html">Courses</a>
+  <a class="w3-bar-item w3-button w3-large" href="#">Service</a>
+  <a class="w3-bar-item w3-button w3-large" href="#">Links</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding no-print" id="myHeader">
+  <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
+  <div class="w3-center">
+    <h1 class="w3-xxlarge w3-animate-bottom">C++ Car Sales Programming Assignment</h1>
+  </div>
+  <div class="w3-right-align">
+    <a href="javascript:window.print();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
+  </div>
+</header>
+
+
+<!-- Body -->
+<div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
+
+  <div id="college_info" class="w3-padding hidden_links">
+    <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
+      <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
+      <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+    </h5>
+  </div>
+
+  <!-- Assignment -->
+  <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom w3-margin-left">
+
+    <div class="w3-container w3-left-align">
+      <h1 class="w3-medium w3-text-teal">Assignment Description:</h1>
+      <p>The first business program I wrote was for my family's used car business to calculate
+        finance charges on buy-here-pay-here car sales. Used car businesses, at the time, did not
+        have the resources to calculate compounding interest (no MS Excel or the Internet),
+        and the banks would charge $100 to call in and request a rate lookup from a table in a book.
+        Needless to say our family sold copies of this program to other dealers in town for $900 each.
+        The program was written in Basic language on a <a href="https://en.wikipedia.org/wiki/Sharp_PC-1401" target="_blank">Sharp PC-1401</a>
+        programmable calculator with 4K of memory and a small thermal printer with serial connector.  A
+        cassette player could be connected to the printer to save/write the program on a metallic cassette.</p>
+      <p>In this assignment, you will write a C++ program that a car dealer can use during the sale of a car. The dealer
+         will enter the sales price and discounts on the car and calculate taxes and fees to produce a Bill-of-Sale showing
+         the unpaid balance of the car. The program will then prompt the dealer to indicate if the customer is paying cash,
+         or requesting a loan. If the customer wishes to make payments to the dealer, then the dealer processes a loan.
+         The dealer enters the annual percentage rate (<a href="https://www.bankrate.com/loans/auto-loans/rates/" target="_blank">Bankrate.com</a>),
+         and then indicates if the customer wishes to make a set number of monthly payments, i.e. 60 months (5 years), or
+         if they would like to set a fixed monthly payment amount. After collecting the number of months or fixed payment amount,
+         the program should calculate either the monthly payment amount given the principle, annual percentage rate, and number of months,
+         or the number of monthly payments given the principle, annual percentage rate, and monthly payment amount. The total of payments
+         can then be calculated as months * payment, and the interest paid as total of payments - principle. Lastly, the program should print out
+         a well formatted Bill-of-Sale and Loan if financing is being offered.</p>
+      <p>Sample I/O:</p>
+      <img src="../resources/autoloan.png" alt="Console Window" class="dark">
+    </div>
+
+    <div class="w3-container w3-left-align">
+      <h1 class="w3-medium w3-text-teal">Assignment Purpose:</h1>
+      <p>This assignment focuses on core C++ programming concepts to include:</p>
+      <ul>
+        <li>Constants</li>
+        <li>Structs</li>
+        <li>Modular Programming (Functions)</li>
+        <li></li>
+      </ul>
+
+    </div>
+
+    <div class="w3-container w3-left-align">
+      <h1 class="w3-medium w3-text-teal">Requirements:</h1>
+      <p><strong>Global constants:</strong> Constants increase the readability of programs by replacing meaningless
+         literals with words that document their use. Constants should be used for any literals that represent values
+         that would not change often, since modifying them requires recompiling the program. Placing select constants
+         in <u>global scope</u> makes their values available throughout the program without a need to pass them as
+         parameters.  Having them located at the top of the file provides ease of locating them, and for modifying
+         them when configuration values change. Global constant names should be in <strong>ALL_CAPS</strong>
+         to help identify them as global constants quickly in source code.</p>
+      <p>Add the following global constants to your program (identifier, data-type, value)</p>
+      <ul>
+        <li><strong>Tax Rate</strong>, floating-point, 6.5%</li>
+        <li><strong>Title Fee</strong>, floating-point, $75.25</li>
+        <li><strong>Transfer Fee</strong>, floating-point, $7.85</li>
+        <li><strong>Registration Fee</strong>, floating-point $14.50</li>
+      </ul>
+
+      <p><strong>Structs:</strong> Structs are a C programming concept that allows a programmer to build a
+        <u>user defined data type</u> made up of sub-properties that can have different data-types. The main
+        purpose of the struct is to consolidate data logic of a program by placing multiple <u>related</u> variables into
+        a single variable that can passed around to functions.  This further simplifies function definitions by reducing
+        the number of parameters defined and arguments passed. Structs, like other type-definitions, should be defined
+        in <u>global scope</u> at the top of the file to make them available for use in function declarations and source code.
+        Struct names should be in <strong>UpperCamelCase</strong>. The leading capital letter helps identify them as a
+        user defined data type</p>
+      <p>Add the following structs to your program (identifier: property name, data-type, description)</p>
+      <ul>
+        <li><strong>Bill of Sale:</strong> represents the cost of the car to the consumer with sales tax and fees.
+          <ul>
+            <li><strong>Price</strong>, floating-point, <span style="color: #008000">Entered sales price of the car.</span></li>
+            <li><strong>Discount</strong>, floating-point, <span style="color: #008000">Entered sum of any down payment, trade-in, dealer discounts.</span></li>
+            <li><strong>Tax</strong>, floating-point, <span style="color: #008000">Calculated sales tax amount.</span></li>
+            <li><strong>Fees</strong>, floating-point, <span style="color: #008000">Sum of Title, Transfer, and Registration fees.</span></li>
+            <li><strong>Unpaid Balance</strong>, floating-point, <span style="color: #008000">Calculated cost of the car.</span></li>
+          </ul></li>
+        <li><strong>Loan:</strong> represents financing if the buyer will be making payments to the dealer.
+          <ul>
+            <li><strong>Principle</strong>, floating-point, <span style="color: #008000">Amount to finance.</span></li>
+            <li><strong>Annual Rate</strong>, floating-point, <span style="color: #008000">Annual percentage rate of interest.</span></li>
+            <li><strong>Months</strong>, integer, <span style="color: #008000">Number of monthly payments.</span></li>
+            <li><strong>Payment</strong>, floating-point, <span style="color: #008000">Monthly payment amount.</span></li>
+            <li><strong>Interest</strong>, floating-point, <span style="color: #008000">Total amount of interest paid on the loan.</span></li>
+            <li><strong>Total Payments</strong>, floating-point, <span style="color: #008000">Total of payments including interest.</span></li>
+          </ul></li>
+        <li><strong>Contract:</strong> represent the sales contract for the purchase of the car.
+          <ul>
+            <li><strong>Bill of Sale</strong>, Bill of Sale, <span style="color: #008000">A Bill of Sale structure property.</span></li>
+            <li><strong>Financed</strong>, Boolean, <span style="color: #008000">Flag to indicate if a loan is being calculated (true: calculate loan, false: paying cash).</span></li>
+            <li><strong>Loan</strong>, Loan, <span style="color: #008000">A Loan structure property.</span></li>
+          </ul></li>
+      </ul>
+
+      <p><strong>Functions:</strong> Functions provide a way to modularize a program or consolidate logic into concise blocks
+         that promote readability and reusability.  In general, any single block of code that takes more than one screen height
+         increases complexity in a program by forcing the reader to scroll up and down to follow logic. Any areas of code that must
+         be written more than once can be moved to functions reducing overall code and simplifying maintenance.  Multiple blocks of code
+         can sometimes be consolidated just by introducing a parameter that provides a simple logic switch to handle minor differences.
+         Some blocks of code can be generalized into functions that will serve many programs, which can speed up development and testing
+         of future projects. Like variables, function identifiers should be in <strong>lowerCamelCase</strong></p>
+      <p>Add the following functions to your program</p>
+      <ul>
+        <li><strong>main</strong>
+          <ul>
+            <li>Control overall flow of the program.</li>
+            <li><strong>Returns</strong>: 0, <span style="color: #008000">Exit status of program to the OS.</span></li>
+            <li><strong>Parameters</strong>: None</li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Create a main loop that asks the user if they want to continue entering sales contracts.</li>
+              <li>Within the loop:<ul>
+                <li>Declare a Contract variable and initialize it to 0.</li>
+                <li>Set the sale property of the contract to the return value of a call to the Bill of Sale function.</li>
+                <li>Ask the dealer if the customer wants a loan and set the Contract variable's financed flag accordingly.</li>
+                <li>If the Contract variable's financed flag is true, then set the Contract loan property to the return of a call to the Get Loan function.</li>
+                <li>Finally call Print Contract with the Contract variable.</li>
+              </ul></li>
+            </ul></li>
+          </ul></li>
+        <li><strong>Get Bill Of Sale</strong>
+          <ul>
+            <li>Function performs I/O to get required input and calculates Bill of sale specific values to populate and return a Bill of Sale structure.</li>
+            <li><strong>Returns</strong>: Bill of Sale structure, <span style="color: #008000">Populated Bill of Sale structure.</span></li>
+            <li><strong>Parameters</strong>: None</li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Declare a local Bill of Sale variable and initialize it to 0.</li>
+              <li>Get the Sales Price from the dealer and set the Bill of Sale Price property.</li>
+              <li>Get the Amount of Down Payment, Trade-in, or other discounts from the dealer and set the Bill of Sale Discount property.</li>
+              <li>Calculate the Bill of Sale Tax property as (Price - Discount) * Tax Rate.</li>
+              <li>Calculate the Bill of Sale Fees property as the sum of the constants: Title Fee, Transfer Fee, and Registration Fee</li>
+              <li>Calculate the Bill of Sale Unpaid Balance property as the Price - Discount + Tax + Fees.</li>
+              <li>Return the populated Bill of Sale variable.</li>
+              </ul></li>
+            </ul></li>
+          </ul></li>
+        <li><Strong>Get Loan</Strong>
+          <ul>
+            <li>Function performs I/O to get required input and calculates loan specific values to populate and return a Loan structure.</li>
+            <li><strong>Returns</strong>: Loan structure, <span style="color: #008000">Populated Loan structure.</span></li>
+            <li><strong>Parameters</strong>:
+              <ul><li>Loan Amount, floating-point, <span style="color: #008000">Unpaid Balance from the Bill of Sale.</span> </li></ul></li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Declare a local Loan variable and initialize it to 0.</li>
+              <li>Get the APR from the dealer and set the Loan Annual Rate property.</li>
+              <li>Ask the dealer if Months or Payment Amount will be entered.</li>
+              <li>If entering Months <ul>
+                <li>Ask the dealer to enter the number of months of the loan and set the Loan Months property.</li>
+                <li>Set the Loan Payment property to the return of a call to the Calculate Payment method passing the Loan's Unpaid Balance, Annual Rate, and Months.</li>
+              </ul></li>
+              <li>If entering Payment <ul>
+                <li>Ask the dealer to enter the monthly payment amount and set the Loan Payment property.</li>
+                <li>Set the Loan Months property to the return of a call to the Calculate Months method passing the Loan's Unpaid Balance, Annual Rate, and Payment.</li>
+              </ul></li>
+              <li>Calculate the Loans Total of Payments property as the Months * Payment</li>
+              <li>Calculate the Loans Interest Paid property as the Total of Payments - Unpaid Balance</li>
+              <li>Return the populated Loan variable.</li>
+            </ul></li>
+          </ul></li>
+        <li><strong>Calculate Payment</strong>
+          <ul>
+            <li>This is a generic function, similar to MS Excel's PMT function, that calculates a monthly payment amount on a loan constant payments and constant interest.</li>
+            <li><strong>Returns</strong>: floating-point, <span style="color: #008000">Monthly payment amount.</span></li>
+            <li><strong>Parameters</strong>: (all parameters should be pass-by-value)
+              <ul>
+                <li>Principle, floating-point, <span style="color: #008000">Amount of the loan.</span></li>
+                <li>Rate, floating-point, <span style="color: #008000">Annual percentage rate.</span></li>
+                <li>Months, integer, <span style="color: #008000">Number of monthly periods.</span></li>
+              </ul></li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Use the following to calculate the Payment Amount:
+                <p>P = (r * PV) / (1 - (1 + r)^(-n))</p>
+
+                <p>Where:</p>
+                <ul>
+                  <li><strong>P</strong> is the regular payment amount (the amount you need to pay each period, usually monthly).</li>
+                  <li><strong>r</strong> is the monthly interest rate, expressed as a decimal (annual interest rate divided by 12).</li>
+                  <li><strong>PV</strong> is the present value or principal amount of the loan.</li>
+                  <li><strong>n</strong> is the total number of payments (loan term in months).</li>
+                </ul>
+
+                <p>To break down the formula further:</p>
+                <ol>
+                  <li>Calculate the monthly interest rate (r): Convert the annual interest rate to a decimal by dividing it by 12 (for monthly payments).</li>
+                  <p>r = (Annual Interest Rate) / (12 * 100)</p>
+
+                  <li>Determine the total number of payments (n): Multiply the number of years by 12 to convert years into months.</li>
+                  <p>n = Number of Years * 12</p>
+
+                  <li>Substitute the values of r, PV, and n into the formula to calculate the payment amount (P).</li>
+                </ol>
+              </li>
+              <li>Return the Payment Amount.</li>
+            </ul></li>
+            <li><strong>Libraries</strong><ul>
+              <li><strong>&lt;cmath&gt;</strong>, <a href="https://cplusplus.com/reference/cmath/pow/" target="_blank">std::pow()</a> can be used to raise a value to an exponent.
+              </li></ul></li>
+          </ul></li>
+        <li><strong>Calculate Months</strong>
+          <ul>
+            <li>This is a generic function, similar to MS Excel's NPER function, that calculates the number of periodic periods of a loan with constant payments and constant interest rate.</li>
+            <li><strong>Returns</strong>: integer, <span style="color: #008000">Number of monthly payments to be made.</span></li>
+            <li><strong>Parameters</strong>: (all parameters should be pass-by-value)
+              <ul>
+                <li>Principle, floating-point, <span style="color: #008000">Amount of the loan.</span></li>
+                <li>Rate, floating-point, <span style="color: #008000">Annual percentage rate.</span></li>
+                <li>Payment, floating-point, <span style="color: #008000">Monthly payment amount.</span></li>
+              </ul></li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Use the following to calculate the Number of Monthly Periods:
+                <p>To calculate the number of periods (months) required to repay a loan with a set monthly payment, you can use the logarithmic functions. The formula is:</p>
+
+                <p>Where:</p>
+                <ul>
+                  <li><em>n</em> = number of periods (months)</li>
+                  <li><em>PMT</em> = monthly payment</li>
+                  <li><em>r</em> = monthly interest rate (decimal), calculated as annual interest rate divided by 12</li>
+                  <li><em>PV</em> = present value or loan amount</li>
+                </ul>
+
+                <p>Let's say you have a loan amount of $10,000, an annual interest rate of 6%, and a monthly payment of $200. First, you would need to convert the annual interest rate to a monthly interest rate:</p>
+
+                <pre>
+r = 0.06 / 12 = 0.005
+    </pre>
+
+                <p>Now you can plug in the values into the formula:</p>
+
+                <pre>
+n = ln((PMT / (PMT - r * PV))) / ln(1 + r)
+    </pre>
+
+                <p>Calculate the denominator first:</p>
+
+                <pre>
+ln(1 + r) &thickapprox; 0.005
+    </pre>
+
+                <p>Next, calculate the numerator:</p>
+
+                <pre>
+(PMT / (PMT - r * PV)) &thickapprox; 0.0274
+ln(0.0274) &thickapprox; -3.596
+    </pre>
+
+                <p>Now, divide the numerator by the denominator:</p>
+
+                <pre>
+n &thickapprox; -3.596 / 0.005 &thickapprox; 719.2
+    </pre>
+
+                <p>Since the number of periods (months) must be a whole number, you would round up to the nearest whole month:</p>
+
+                <pre>
+n &thickapprox; 720
+    </pre>
+
+                <p>So, it would take approximately 720 months (or 60 years) to repay the loan with a $200 monthly payment and a 6% annual interest rate on a $10,000 loan amount. Keep in mind that this is a simplified example and doesn't account for factors like compounding frequency, additional fees, or changes in interest rates over time.</p>
+
+              </li>
+              <li>Return the Number of Monthly Periods.</li>
+            </ul></li>
+            <li><strong>Libraries</strong><ul>
+              <li><strong>&lt;cmath&gt;</strong>, <a href="https://cplusplus.com/reference/cmath/log/" target="_blank">std::log()</a> can be used to calculate the natural log of a value.
+              </li></ul></li>
+          </ul></li>
+        <li><strong>Print Contract</strong>
+          <ul>
+            <li>Function prints the contract to the console window.</li>
+            <li><strong>Returns</strong>: None</li>
+            <li><strong>Parameters</strong>: (all parameters should be pass-by-value)
+              <ul>
+                <li>Contract, <span style="color: #008000">A populated Contract structure.</span></li>
+              </ul></li>
+            <li><strong>Pseudocode</strong>:<ul>
+              <li>Print the values of the Bill of Sale</li>
+              <li>If financed, print the loan values</li>
+            </ul></li>
+            <li><strong>Libraries</strong><ul>
+              <li><strong>&lt;iostream&gt;</strong>, includes <strong>&lt;ios&gt;</strong><ul>
+                <li><a href="https://cplusplus.com/reference/ios/fixed/" target="_blank">std::fixed</a> provided fixed with output of floating-point numbers.</li></ul>
+              <li><strong>&lt;iomanip&gt;</strong><ul>
+                <li><a href="https://cplusplus.com/reference/iomanip/setprecision/" target="_blank">std::setprecision()</a> sets fixed number of digits after the decimal for output of floating-point numbers.</li>
+                <li><a href="https://cplusplus.com/reference/iomanip/setw/" target="_blank">std::setw()</a> outputs numbers right justified to n digits width.</li></ul>
+              </li></ul></li>
+          </ul></li>
+          </ul></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+  <!-- Assignment End -->
+
+
+</div>
+<!-- Body end -->
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark no-print hidden_links">
+  <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
+    <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
+    <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+  </h5>
+  <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
+    <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
+    <a class="w3-text-white" href="#myHeader"><span class="w3-large">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>
