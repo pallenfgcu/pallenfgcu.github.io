@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="">
+<head>
+    <title>Paul Allen FGCU</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/lib/w3-theme-teal.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
+</head>
+
+<body>
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" id="nav_sidebar" style="display:none">
+    <h1 class="w3-large w3-text-theme">Site Navigation</h1>
+    <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
+    <a class="w3-bar-item w3-button w3-large" href="../index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-large" href="#">CV</a>
+    <a class="w3-bar-item w3-button w3-large" href="../courses.html">Courses</a>
+    <a class="w3-bar-item w3-button w3-large" href="#">Service</a>
+    <a class="w3-bar-item w3-button w3-large" href="#">Links</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
+    <div class="w3-center">
+        <h1 id="header_course_title" class="w3-xxlarge w3-animate-bottom"></h1>
+    </div>
+    <div class="w3-right-align">
+        <script>
+            function printVersion() {
+                $('w3-card').each(function() {
+                    $(this).addClass("no-w3-card").removeClass("w3-card");
+                });
+                window.print();
+                $('no-w3-card').each(function() {
+                    $(this).addClass("w3-card").removeClass("no-w3-card");
+                });
+            }
+        </script>
+        <a href="javascript:printVersion();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
+    </div>
+</header>
+
+<!-- Syllabus body -->
+<div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom syllabi_info">
+    <div id="section_info" class="w3-card w3-padding w3-margin-bottom"></div>
+    <div id="contact_info" class="w3-card w3-padding w3-margin-bottom"></div>
+</div>
+<!-- end Syllabus body -->
+
+
+
+</body>
+
+<script type="module">
+    import {load} from "./syllabi.js";
+    //load("202305", "51977");
+    load("202308", "80602");
+
+</script>
+</html>

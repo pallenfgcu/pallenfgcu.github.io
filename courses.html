@@ -9,6 +9,7 @@
           integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
     <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
 </head>
 
@@ -35,28 +36,32 @@
 <!-- Row 1 -->
 <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
 
-    <a href="Courses/cop2006_syllabus.html">
-        <div class="w3-third">
-            <div class="w3-card w3-container" style="min-height:260px">
-                <div class="w3-left-align">
-                    <h4>COP 2006 Programming I - 3 credit(s)</h4>
-                    <p>Introductory computer programming concepts and problem solving skills are learned using a modern
-                        programming language. Principles of good programming style are emphasized. This course is delivered in
-                        C++/Java unless noted otherwise.</p>
-                </div>
-                <hr/>
-                <div class="w3-left-align">
-                    <h5>Prerequisite(s)</h5>
-                    <p>COP 1500 for level Undergraduate with minimum grade of C</p>
-                </div>
+    <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:260px">
+            <div class="w3-left-align">
+                <h4><a href="Courses/cop2006_syllabus.html">COP 2006 Programming I - 3 credit(s)</a></h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cop2006"></ul>
+                <h4>Description</h4>
+                <p>Introductory computer programming concepts and problem solving skills are learned using a modern
+                    programming language. Principles of good programming style are emphasized. This course is delivered in
+                    C++/Java unless noted otherwise.</p>
+            </div>
+            <hr/>
+            <div class="w3-left-align">
+                <h5>Prerequisite(s)</h5>
+                <p>COP 1500 for level Undergraduate with minimum grade of C</p>
             </div>
         </div>
-    </a>
+    </div>
 
     <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:260px">
             <div class="w3-left-align">
                 <h4>COP 2001 Programming Methodology - 3 credit(s)</h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cop2001"></ul>
+                <h4>Description</h4>
                 <p>Advanced computer programming concepts and problem solving are explored using a procedural programming
                     language and software tools. Topics include pointers, dynamic memory allocation, string handling,
                     structures, file I/O, and recursion. Includes two hours of lecture and one hour of lab per week.</p>
@@ -70,16 +75,13 @@
         </div>
     </div>
 
-    <a href="Courses/cop3003_syllabus.html">
+
     <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:260px">
             <div class="w3-left-align">
-                <h4>COP 3003 Programming II - 3 credit(s)</h4>
+                <h4><a href="Courses/cop3003_syllabus.html">COP 3003 Programming II - 3 credit(s)</a></h4>
                 <h4>Sections:</h4>
-                <ul>
-                    <li><a href="Courses/cop3003_syllabus.html?term=202308&crn=80601">2023 - Fall - 80601</a></li>
-                    <li><a href="Courses/cop3003_syllabus.html?term=202308&crn=80602">2023 - Fall - 80602</a></li>
-                </ul>
+                <ul id="section_list_cop3003"></ul>
                 <h4>Description</h4>
                 <p>Students will expand on their knowledge base and skills gained from introductory programming. Topics
                     include, but are not limited to, modularity (classes and packages); object-oriented concepts (e.g.,
@@ -97,18 +99,20 @@
             </div>
         </div>
     </div>
-    </a>
+
 
 </div> <!-- Row 1 -->
 
 <!-- Row 2 -->
 <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
 
-    <a href="Courses/cda3104_syllabus.html">
     <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:260px">
             <div class="w3-left-align">
-                <h4>CDA 3104 Computer Organization &AMP; Assembly Language Programming - 3 credit(s)</h4>
+                <h4><a href="Courses/cda3104_syllabus.html">CDA 3104 Computer Organization &AMP; Assembly Language Programming - 3 credit(s)</a></h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cda3104"></ul>
+                <h4>Description</h4>
                 <p>Covers the basic concepts of computer organization using a computer platform or a simulator and the
                     corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory
                     models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.</p>
@@ -122,17 +126,13 @@
             </div>
         </div>
     </div>
-    </a>
 
-    <a href="Courses/cda3200_syllabus.html">
     <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:260px">
             <div class="w3-left-align">
-                <h4>CDA 3200 Digital Systems &AMP; Architecture - 3 credit(s)</h4>
+                <h4><a href="Courses/cda3200_syllabus.html">CDA 3200 Digital Systems &AMP; Architecture - 3 credit(s)</a></h4>
                 <h4>Sections:</h4>
-                <ul>
-                    <li><a href="Courses/cda3200_syllabus.html?term=202308&crn=84590">2023 - Fall - 80601</a></li>
-                </ul>
+                <ul id="section_list_cda3200"></ul>
                 <h4>Description</h4>
                 <p>This course covers design and application of data paths, controllers, memory systems, and registers
                     involved in digital systems. It discusses aspects of traditional and modern computer architecture.
@@ -147,40 +147,38 @@
             </div>
         </div>
     </div>
-    </a>
-    <a href="Courses/cop3530_syllabus.html">
-        <div class="w3-third">
-            <div class="w3-card w3-container" style="min-height:260px">
-                <div class="w3-left-align">
-                    <h4>COP 3530 Data Structures &amp; Algorithms - 3 credit(s)</h4>
-                    <h4>Sections:</h4>
-                    <ul>
-                        <li><a href="Courses/cop3530_syllabus.html?term=202305&crn=51977">2023 - Summer B</a></li>
-                    </ul>
-                    <h4>Description</h4>
-                    <p>Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs)
-                        are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees.
-                        Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.</p>
-                </div>
-                <hr/>
-                <div class="w3-left-align">
-                    <h5>Prerequisite(s)</h5>
-                    <p>COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C</p>
-                </div>
+
+    <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:260px">
+            <div class="w3-left-align">
+                <h4><a href="Courses/cop3530_syllabus.html">COP 3530 Data Structures &amp; Algorithms - 3 credit(s)</a></h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cop3530"></ul>
+                <h4>Description</h4>
+                <p>Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs)
+                    are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees.
+                    Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.</p>
+            </div>
+            <hr/>
+            <div class="w3-left-align">
+                <h5>Prerequisite(s)</h5>
+                <p>COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C</p>
             </div>
         </div>
-    </a>
+    </div>
 
 </div> <!-- Row 2 -->
 
 <!-- Row 3 -->
 <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
 
-    <a href="Courses/cop3710_syllabus.html">
     <div class="w3-third">
         <div class="w3-card w3-container" style="min-height:260px">
             <div class="w3-left-align">
-                <h4>COP 3710 Introduction to Data Engineering - 3 credit(s)</h4>
+                <h4><a href="Courses/cop3710_syllabus.html">COP 3710 Introduction to Data Engineering - 3 credit(s)</a></h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cop3710"></ul>
+                <h4>Description</h4>
                 <p>This course covers database design and applications of database management systems in software
                     development. It includes relational database management systems (RDBMS) and SQL, and how databases
                     are accessed in computer programs. It also covers different data formats, i.e. XML, JSON, etc. This
@@ -194,40 +192,40 @@
             </div>
         </div>
     </div>
-    </a>
 
-    <a href="Courses/cen4930_emb_prog_syllabus.html">
-        <div class="w3-third">
-            <div class="w3-card w3-container" style="min-height:260px">
-                <div class="w3-left-align">
-                    <h4>CEN 4930 ST:Embedded Programming - 3 credit(s)</h4>
-                    <h4>Sections:</h4>
-                    <ul>
-                        <li><a href="Courses/cen4930_emb_prog_syllabus.html?term=202308&crn=84929">2023 - Fall - 84929</a></li>
-                    </ul>
-                    <h4>Description</h4>
-                    <p>The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within
-                        the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding
-                        of the intricate interplay between software and hardware in embedded systems. This course delves into the
-                        practical aspects of designing, developing, and optimizing software for embedded environments, leveraging
-                        the powerful capabilities of the C++ programming language and Arduino microcontrollers.</p>
-                </div>
-                <hr/>
-                <div class="w3-left-align">
-                    <h5>Prerequisite(s)</h5>
-                    <p>COP 3003 for level Undergraduate with minimum grade of C</p>
-                </div>
+    <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:260px">
+            <div class="w3-left-align">
+                <h4><a href="Courses/cen4930_syllabus.html">CEN 4930 ST:Embedded Programming - 3 credit(s)</a></h4>
+                <h4>Sections:</h4>
+                <ul id="section_list_cen4930"></ul>
+                <h4>Description</h4>
+                <p>The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within
+                    the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding
+                    of the intricate interplay between software and hardware in embedded systems. This course delves into the
+                    practical aspects of designing, developing, and optimizing software for embedded environments, leveraging
+                    the powerful capabilities of the C++ programming language and Arduino microcontrollers.</p>
+            </div>
+            <hr/>
+            <div class="w3-left-align">
+                <h5>Prerequisite(s)</h5>
+                <p>COP 3003 for level Undergraduate with minimum grade of C</p>
             </div>
         </div>
-    </a>
-
+    </div>
 
 </div> <!-- Row 3 -->
 
+<script type="module">
+    import {loadSectList} from "./Courses/syllabi.js";
+    loadSectList();
+</script>
+
+
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark">
-    <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
-        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">U.A. Whitaker Department of Computing & Software
+    <h5><a href="https://www.fgcu.edu" class="w3-text-white" target="_blank">Florida Gulf Coast University</a><br>
+        <a href="https://www.fgcu.edu/eng/softwareengineering/" class="w3-text-white" target="_blank">U.A. Whitaker Department of Computing & Software
             Engineering</a></h5>
     <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
         <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;

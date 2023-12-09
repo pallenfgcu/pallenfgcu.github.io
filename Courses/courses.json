@@ -116,6 +116,60 @@
           }
         ]
       }
+    },
+    {
+      "202401": {
+        "courses": [
+          {
+            "16027" : {
+              "course": "COP 3003",
+              "days": "M W",
+              "times": "07:30am - 08:45am",
+              "room": "Holmes Engineering 202"
+            }
+          },
+          {
+            "14515" : {
+              "course": "CDA 3200",
+              "days": "M W",
+              "times": "09:00am - 10:15am",
+              "room": "Holmes Engineering 202"
+            }
+          },
+          {
+            "10413" : {
+              "course": "COP 3530",
+              "days": "M W",
+              "times": "10:30am - 11:45am",
+              "room": "Holmes Engineering 202"
+            }
+          },
+          {
+            "15625" : {
+              "course": "CDA 3104",
+              "days": "M W",
+              "times": "03:00pm - 04:15pm",
+              "room": "Holmes Engineering 202"
+
+            }
+          },
+          {
+            "15626" : {
+              "course": "CDA 3104",
+              "days": "M W",
+              "times": "04:30pm - 05:45pm",
+              "room": "Holmes Engineering 202"
+
+            }
+          }
+        ],
+        "office_hours": [
+          {
+            "days": "T",
+            "hours": "09:00am - 12:00pm"
+          }
+        ]
+      }
     }
   ]
 }

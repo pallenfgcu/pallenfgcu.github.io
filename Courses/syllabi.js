@@ -13,6 +13,68 @@ export const load=(term, crn)=>{
         });
 }
 
+export const loadSectList=() => {
+    fetch("./Courses/courses.json")
+        .then((res) => res.json())
+        .then((data) => {
+            loadSectionLists(data);
+        });
+}
+
+function loadSectionLists(data) {
+
+    for (let t=0; t < data.sections.length; ++t) {
+
+        Object.keys(data.sections[t]).forEach(term => {
+
+            const sectionInfo = data.sections.find( terms => term in terms);
+
+            for (let c=0; c < sectionInfo[term].courses.length; ++c) {
+
+                Object.keys(sectionInfo[term].courses[c]).forEach(crn => {
+
+                    const courseInfo = sectionInfo[term].courses.find(crns => crn in crns);
+
+                    const crse = courseInfo[crn].course.replace(" ", "").toLowerCase();
+                    const sectList = $(`#section_list_${crse}`);
+                    if (sectList) {
+                        const listItem =  $('<li>');
+                        const listLink = $('<a>', {href: `Courses/${crse}_syllabus.html?term=${term}&crn=${crn}`});
+                        listLink.append(`${courseInfo[crn].course} ${parseTerm(term)} CRN: ${crn}`);
+                        listItem.append(listLink);
+                        sectList.append(listItem);
+                    }
+
+                });
+
+            }
+
+        }); // each term
+
+    }
+
+} // loadSectionLists
+
+function parseTerm(term) {
+    let ret = '';
+    const mnth = term.substring(4,6);
+    switch(mnth) {
+        case '01':
+            ret += 'Spring';
+            break;
+        case '05':
+            ret += 'Summer';
+            break;
+        case '08':
+            ret += 'Fall';
+            break;
+    }
+
+    ret += ' ' + term.substring(0, 4);
+
+    return ret;
+}
+
 function loadContactInfo(data) {
     const divInfo = $('#contact_info');
     const divTitle = $(`<h1 class="w3-medium w3-text-teal w3-left-align">Instructor Information</h1>`);
