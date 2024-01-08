@@ -116,6 +116,13 @@ function loadSectionInfo(data, term, crn) {
         divOfficeHrsTab.append(tableInfoRow('Days/Times:', `${value.days} / ${value.hours}`));
     });
     divInfo.append(divOfficeHrsTab);
+    const officeHrsOther = 'Officer hours can be arranged in-person or remote outside of stated times by sending ' +
+        'a message with 2-3 days/times your are available at least 24hrs in advance.  I will confirm the best time ' +
+        'with you or suggest other times if need be.  You must reply to my confirmation message to ensure there is an ' +
+        'agreed upon time.';
+    const pOfficerHrsOther = $('<p>', {class: 'w3-small w3-left-align syllabi_info'});
+    pOfficerHrsOther.append(officeHrsOther);
+    divInfo.append(pOfficerHrsOther);
 }
 
 function hideContactInfo() {
