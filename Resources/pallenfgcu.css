@@ -1,3 +1,9 @@
+
+.canvas div {
+    display: inline-block;
+    overflow: auto;
+}
+
 a:link {
     text-decoration: none;
     color: #0000FF;
