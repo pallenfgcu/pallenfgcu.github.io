@@ -8,10 +8,26 @@
   "email": "pallen@fgcu.edu",
   "courses": [
     {
-      "COP 3530" :  {
-        "title": "Data Structures and Algorithms",
-        "description": "Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs) are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees. Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.",
-        "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C"
+      "CDA 3104" :  {
+        "title": "Computer Organization & Assembly Language Programming",
+        "short_title": "Comp. Orgn. & Assmb. Lang. Prog.",
+        "description": "Covers the basic concepts of computer organization using a computer platform or a simulator and the corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.",
+        "prerequisites": "(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and COP 2006 for level Undergraduate with minimum grade of C"
+      }
+    },
+    {
+      "CDA 3200" : {
+        "title": "Digital Systems & Architecture",
+        "short_title": "Digital Sys. & Arch.",
+        "description": "This course covers design and application of data paths, controllers, memory systems, and registers involved in digital systems. It discusses aspects of traditional and modern computer architecture. Design topics include finite state machines, logic gates, and Boolean algebra.",
+        "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C and (PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C))"
+      }
+    },
+    {
+      "COP 2006" :  {
+        "title": "Programming I",
+        "description": "Introductory computer programming concepts and problem-solving skills are learned using a modern\n                    programming language. Principles of good programming style are emphasized. This course is delivered in\n                    C++ unless noted otherwise.",
+        "prerequisites": "COP 1500 for level Undergraduate with minimum grade of C"
       }
     },
     {
@@ -22,19 +38,10 @@
       }
     },
     {
-      "CDA 3200" : {
-      "title": "Digital Systems & Architecture",
-      "short_title": "Digital Sys. & Arch.",
-      "description": "This course covers design and application of data paths, controllers, memory systems, and registers involved in digital systems. It discusses aspects of traditional and modern computer architecture. Design topics include finite state machines, logic gates, and Boolean algebra.",
-      "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C and (PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C))"
-      }
-    },
-    {
-      "CDA 3104" :  {
-        "title": "Computer Organization & Assembly Language Programming",
-        "short_title": "Comp. Orgn. & Assmb. Lang. Prog.",
-        "description": "Covers the basic concepts of computer organization using a computer platform or a simulator and the corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.",
-        "prerequisites": "(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and COP 2006 for level Undergraduate with minimum grade of C"
+      "COP 3530" :  {
+        "title": "Data Structures and Algorithms",
+        "description": "Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs) are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees. Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.",
+        "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C"
       }
     },
     {
@@ -167,6 +174,26 @@
           {
             "days": "T",
             "hours": "10:00am - 01:00pm"
+          }
+        ]
+      }
+    },
+    {
+      "202405": {
+        "courses": [
+          {
+            "51325" : {
+              "course": "COP 2006",
+              "days": "M W F",
+              "times": "09:30am - 11:50am",
+              "room": "Holmes 402"
+            }
+          }
+        ],
+        "office_hours": [
+          {
+            "days": "M W",
+            "hours": "12:00pm - 01:00pm"
           }
         ]
       }
