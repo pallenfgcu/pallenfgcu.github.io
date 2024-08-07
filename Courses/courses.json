@@ -197,6 +197,54 @@
           }
         ]
       }
+    },
+    {
+      "202408": {
+        "courses": [
+          {
+            "85149" : {
+              "course": "CDA 3104",
+              "days": "T R",
+              "times": "10:30am - 11:45am",
+              "room": "Holmes Engineering 433"
+            }
+          },
+          {
+            "86510" : {
+              "course": "CDA 3200",
+              "days": "M W",
+              "times": "12:00pm - 01:15pm",
+              "room": "Holmes Engineering 433"
+            }
+          },
+          {
+            "86611" : {
+              "course": "CEN 4930",
+              "days": "T R",
+              "times": "09:00am - 10:15am",
+              "room": "Holmes Engineering 433"
+            }
+          },
+          {
+            "86511" : {
+              "course": "COP 3530",
+              "days": "M W",
+              "times": "10:30am - 11:45am",
+              "room": "Holmes Engineering 433"
+            }
+          }
+        ],
+        "office_hours": [
+          {
+            "days": "M W",
+            "hours": "01:30pm - 02:30pm"
+          },
+          {
+            "days": "R",
+            "hours": "12:00pm - 01:00pm"
+          }
+        ]
+      }
     }
   ]
 }
