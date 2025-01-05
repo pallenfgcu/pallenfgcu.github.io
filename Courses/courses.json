@@ -8,7 +8,7 @@
   "email": "pallen@fgcu.edu",
   "courses": [
     {
-      "CDA 3104" :  {
+      "CDA 3104": {
         "title": "Computer Organization & Assembly Language Programming",
         "short_title": "Comp. Orgn. & Assmb. Lang. Prog.",
         "description": "Covers the basic concepts of computer organization using a computer platform or a simulator and the corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "CDA 3200" : {
+      "CDA 3200": {
         "title": "Digital Systems & Architecture",
         "short_title": "Digital Sys. & Arch.",
         "description": "This course covers design and application of data paths, controllers, memory systems, and registers involved in digital systems. It discusses aspects of traditional and modern computer architecture. Design topics include finite state machines, logic gates, and Boolean algebra.",
@@ -24,31 +24,31 @@
       }
     },
     {
-      "COP 2006" :  {
+      "COP 2006": {
         "title": "Programming I",
         "description": "Introductory computer programming concepts and problem-solving skills are learned using a modern\n                    programming language. Principles of good programming style are emphasized. This course is delivered in\n                    C++ unless noted otherwise.",
         "prerequisites": "COP 1500 for level Undergraduate with minimum grade of C"
       }
     },
     {
-      "COP 3003" :  {
+      "COP 3003": {
         "title": "Programming II",
         "description": "Students will expand on their knowledge base and skills gained from introductory programming. Topics include, but are not limited to, modularity (classes and packages); object-oriented concepts (e.g., encapsulation, inheritance, and polymorphism); error handling and exceptions; generics/templates; dynamic constructs and memory management encompassing pointer arithmetic, parameter passing, and dereferencing; and reuse of API/frameworks/libraries/packages (e.g., GUI, networking, persistence storage, and web). Relevant programming environments and tools (e.g., build tools), especially in the context of software engineering are also experienced. This course is delivered in C++ unless noted otherwise.",
         "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C"
       }
     },
     {
-      "COP 3530" :  {
+      "COP 3530": {
         "title": "Data Structures and Algorithms",
         "description": "Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs) are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees. Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.",
         "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C"
       }
     },
     {
-      "CEN 4930" :  {
-        "title": "ST:Embedded Programming",
-        "short_title": "Embedded Programming",
-        "description": "",
+      "CEN 4930": {
+        "title"        : "ST:Embedded Programming",
+        "short_title"  : "Embedded Programming"   ,
+        "description"  : ""                       ,
         "prerequisites": ""
       }
     }
@@ -58,69 +58,56 @@
       "202305": {
         "courses": [
           {
-            "51977" : {
-              "course": "COP 3530",
-              "days": "M W F",
-              "times": "09:30am - 11:50am",
-              "room": "Holmes 402"
+            "51977": {
+              "course": "COP 3530"         ,
+              "days"  : "M W F"            ,
+              "times" : "09:30am - 11:50am",
+              "room"  : "Holmes 402"
             }
           }
         ],
-        "office_hours": [
-          {
-            "days": "M W",
-            "hours": "12:00pm - 01:00pm"
-          }
-        ]
+        "office_hours": [ {"days": "M W", "hours": "12:00pm - 01:00pm"} ]
       }
     },
     {
       "202308": {
         "courses": [
           {
-            "80601" : {
-              "course": "COP 3003",
-              "days": "M W",
-              "times": "04:30pm - 05:45pm",
-              "room": "Holmes Engineering 402"
-            }
-          },
-
-          {
-            "80602" : {
-              "course": "COP 3003",
-              "days": "M W",
-              "times": "06:30pm - 07:15pm",
-              "room": "Holmes Engineering 402"
-
+            "80601": {
+              "course": "COP 3003"              ,
+              "days"  : "M W"                   ,
+              "times" : "04:30pm - 05:45pm"     ,
+              "room"  : "Holmes Engineering 402"
             }
           },
           {
-            "84929" : {
-              "course": "CEN 4930",
-              "days": "M W",
-              "times": "01:30pm - 02:45pm",
-              "room": "Seidler Hall 127"
+            "80602": {
+              "course": "COP 3003"              ,
+              "days"  : "M W"                   ,
+              "times" : "06:30pm - 07:15pm"     ,
+              "room"  : "Holmes Engineering 402"
             }
           },
           {
-            "84590" : {
-              "course": "CDA 3200",
-              "days": "T R",
-              "times": "10:30am - 11:45am",
-              "room": "Holmes Engineering 402"
+            "84929": {
+              "course": "CEN 4930"         ,
+              "days"  : "M W"              ,
+              "times" : "01:30pm - 02:45pm",
+              "room"  : "Seidler Hall 127"
+            }
+          },
+          {
+            "84590": {
+              "course": "CDA 3200"              ,
+              "days"  : "T R"                   ,
+              "times" : "10:30am - 11:45am"     ,
+              "room"  : "Holmes Engineering 402"
             }
           }
         ],
         "office_hours": [
-          {
-            "days": "M W",
-            "hours": "03:00pm - 04:00pm"
-          },
-          {
-            "days": "T",
-            "hours": "12:00pm - 01:00pm"
-          }
+          {"days": "M W", "hours": "03:00pm - 04:00pm"},
+          {"days": "T"  , "hours": "12:00pm - 01:00pm"}
         ]
       }
     },
@@ -128,121 +115,145 @@
       "202401": {
         "courses": [
           {
-            "16027" : {
-              "course": "COP 3003",
-              "days": "M W",
-              "times": "07:30am - 08:45am",
-              "room": "Holmes Engineering 202"
+            "16027": {
+              "course": "COP 3003"              ,
+              "days"  : "M W"                   ,
+              "times" : "07:30am - 08:45am"     ,
+              "room"  : "Holmes Engineering 202"
             }
           },
           {
-            "14515" : {
-              "course": "CDA 3200",
-              "days": "M W",
-              "times": "09:00am - 10:15am",
-              "room": "Holmes Engineering 202"
+            "14515": {
+              "course": "CDA 3200"              ,
+              "days"  : "M W"                   ,
+              "times" : "09:00am - 10:15am"     ,
+              "room"  : "Holmes Engineering 202"
             }
           },
           {
-            "10413" : {
-              "course": "COP 3530",
-              "days": "M W",
-              "times": "10:30am - 11:45am",
-              "room": "Holmes Engineering 202"
+            "10413": {
+              "course": "COP 3530"              ,
+              "days"  : "M W"                   ,
+              "times" : "10:30am - 11:45am"     ,
+              "room"  : "Holmes Engineering 202"
             }
           },
           {
-            "15625" : {
-              "course": "CDA 3104",
-              "days": "M W",
-              "times": "03:00pm - 04:15pm",
-              "room": "Holmes Engineering 202"
-
+            "15625": {
+              "course": "CDA 3104"              ,
+              "days"  : "M W"                   ,
+              "times" : "03:00pm - 04:15pm"     ,
+              "room"  : "Holmes Engineering 202"
             }
           },
           {
-            "15626" : {
-              "course": "CDA 3104",
-              "days": "M W",
-              "times": "04:30pm - 05:45pm",
-              "room": "Holmes Engineering 202"
-
+            "15626": {
+              "course": "CDA 3104"              ,
+              "days"  : "M W"                   ,
+              "times" : "04:30pm - 05:45pm"     ,
+              "room"  : "Holmes Engineering 202"
             }
           }
         ],
-        "office_hours": [
-          {
-            "days": "T",
-            "hours": "10:00am - 01:00pm"
-          }
-        ]
+        "office_hours": [ {"days": "T", "hours": "10:00am - 01:00pm"} ]
       }
     },
     {
       "202405": {
         "courses": [
           {
-            "51325" : {
-              "course": "COP 2006",
-              "days": "M W F",
-              "times": "09:30am - 11:50am",
-              "room": "Holmes 402"
+            "51325": {
+              "course": "COP 2006"         ,
+              "days"  : "M W F"            ,
+              "times" : "09:30am - 11:50am",
+              "room"  : "Holmes 402"
             }
           }
         ],
-        "office_hours": [
-          {
-            "days": "M W",
-            "hours": "12:00pm - 01:00pm"
-          }
-        ]
+        "office_hours": [ {"days": "M W", "hours": "12:00pm - 01:00pm"} ]
       }
     },
     {
       "202408": {
         "courses": [
           {
-            "85149" : {
-              "course": "CDA 3104",
-              "days": "T R",
-              "times": "10:30am - 11:45am",
-              "room": "Holmes Engineering 433"
+            "85149": {
+              "course": "CDA 3104"              ,
+              "days"  : "T R"                   ,
+              "times" : "10:30am - 11:45am"     ,
+              "room"  : "Holmes Engineering 433"
             }
           },
           {
-            "86510" : {
-              "course": "CDA 3200",
-              "days": "M W",
-              "times": "12:00pm - 01:15pm",
-              "room": "Holmes Engineering 433"
+            "86510": {
+              "course": "CDA 3200"              ,
+              "days"  : "M W"                   ,
+              "times" : "12:00pm - 01:15pm"     ,
+              "room"  : "Holmes Engineering 433"
             }
           },
           {
-            "86611" : {
-              "course": "CEN 4930",
-              "days": "T R",
-              "times": "09:00am - 10:15am",
-              "room": "Holmes Engineering 433"
+            "86611": {
+              "course": "CEN 4930"              ,
+              "days"  : "T R"                   ,
+              "times" : "09:00am - 10:15am"     ,
+              "room"  : "Holmes Engineering 433"
             }
           },
           {
-            "86511" : {
-              "course": "COP 3530",
-              "days": "M W",
-              "times": "10:30am - 11:45am",
-              "room": "Holmes Engineering 433"
+            "86511": {
+              "course": "COP 3530"              ,
+              "days"  : "M W"                   ,
+              "times" : "10:30am - 11:45am"     ,
+              "room"  : "Holmes Engineering 433"
             }
           }
         ],
         "office_hours": [
+          {"days": "M W", "hours": "01:30pm - 02:30pm"},
+          {"days": "R"  , "hours": "12:00pm - 01:00pm"}
+        ]
+      }
+    },
+    {
+      "202501": {
+        "courses": [
           {
-            "days": "M W",
-            "hours": "01:30pm - 02:30pm"
+            "14489": {
+              "course": "CDA 3104"              ,
+              "days"  : "M W"                   ,
+              "times" : "03:00pm - 16:15pm"     ,
+              "room"  : "Holmes Engineering 202"
+            }
           },
           {
-            "days": "R",
-            "hours": "12:00pm - 01:00pm"
+            "14490": {
+              "course": "CDA 3104"              ,
+              "days"  : "M W"                   ,
+              "times" : "04:30pm - 05:45pm"     ,
+              "room"  : "Holmes Engineering 202"
+            }
+          },
+          {
+            "14189": {
+              "course": "CDA 3200"         ,
+              "days"  : "M W"              ,
+              "times" : "09:00am - 10:15am",
+              "room"  : "Siedler Hall 127"
+            }
+          },
+          {
+            "10413": {
+              "course": "COP 3530"              ,
+              "days"  : "M W"                   ,
+              "times" : "10:30am - 11:45am"     ,
+              "room"  : "Holmes Engineering 202"
+            }
           }
+        ],
+        "office_hours": [
+          {"days": "M W", "hours": "01:00pm - 02:00pm"},
+          {"days": "T R", "hours": "10:00am - 11:00am"}
         ]
       }
     }
