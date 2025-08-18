@@ -1,6 +1,6 @@
 {
   "name": "Paul Allen",
-  "title": "Instructor II",
+  "title": "Instructor III",
   "college": "U.A. Whitaker College of Engineering",
   "department": "Computing & Software Engineering",
   "office": "HE-411",
@@ -47,8 +47,22 @@
     {
       "CEN 4930": {
         "title"        : "ST:Embedded Programming",
-        "short_title"  : "Embedded Programming"   ,
-        "description"  : ""                       ,
+        "short_title"  : "Embedded Programming",
+        "description"  : "The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding of the intricate interplay between software and hardware in embedded systems. This course delves into the practical aspects of designing, developing, and optimizing software for embedded environments, leveraging the powerful capabilities of the C++ programming language and Arduino microcontrollers.",
+        "prerequisites": ""
+      }
+    },
+    {
+      "COT 3400": {
+        "title"        : "Design & Analysis of Algorithms",
+        "description"  : "The design, implementation, analysis, and application of a range of computer algorithms are explored. Function order of growth and amortized analysis are used in analyzing algorithms. A review and extension of data structure topics including trees and graphs are covered. Algorithm design strategies such as divide-and- conquer, the greedy method, and dynamic programming are studied.",
+        "prerequisites": "COP 3530 for level Undergraduate with minimum grade of C"
+      }
+    },
+    {
+      "EEL 5769": {
+        "title"        : "Computer Architecture",
+        "description"  : "This course focuses on advanced topics, including memory hierarchy such as caching and virtual memory, pipelining, multiprocessor systems, instruction, data, and thread level parallelism and other contemporary issues in computer architecture.",
         "prerequisites": ""
       }
     }
@@ -254,6 +268,48 @@
         "office_hours": [
           {"days": "M W", "hours": "01:00pm - 02:00pm"},
           {"days": "T R", "hours": "10:00am - 11:00am (remote)"}
+        ]
+      }
+    },
+    {
+      "202508": {
+        "courses": [
+          {
+            "86611": {
+              "course": "CEN 4930"              ,
+              "days"  : "M W"                   ,
+              "times" : "09:00am - 10:15am"     ,
+              "room"  : "Holmes Engineering 402"
+            }
+          },
+          {
+            "87297": {
+              "course": "COT 3400"         ,
+              "days"  : "M W"              ,
+              "times" : "12:00pm - 01:15am",
+              "room"  : "Holmes Engineering 302"
+            }
+          },
+          {
+            "85149": {
+              "course": "CDA 3104"              ,
+              "days"  : "M W"                   ,
+              "times" : "01:30pm - 02:45pm"     ,
+              "room"  : "Holmes Engineering 202"
+            }
+          },
+          {
+            "87153": {
+              "course": "EEL 5769   "              ,
+              "days"  : "M W"                   ,
+              "times" : "04:30pm - 05:45pm"     ,
+              "room"  : "Holmes Engineering 202"
+            }
+          }
+        ],
+        "office_hours": [
+          {"days": "M W", "hours": "03:00pm - 04:00pm"},
+          {"days": "Other", "hours": "By appointment"}
         ]
       }
     }
