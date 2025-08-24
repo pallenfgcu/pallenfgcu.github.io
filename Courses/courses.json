@@ -275,6 +275,14 @@
       "202508": {
         "courses": [
           {
+            "86203": {
+              "course": "CEN 3941"              ,
+              "days"  : "Online"                   ,
+              "times" : "Online"     ,
+              "room"  : "Online"
+            }
+          },
+          {
             "86611": {
               "course": "CEN 4930"              ,
               "days"  : "M W"                   ,
