@@ -68,10 +68,15 @@
       }
     },
     {
+      "CEN 4935"       : "Senior Software Engr Project II",
+      "description"    : "This is the second course in a year-long sequence of a senior software project. Students are expected to continue their software project from the first project course, i.e., Senior Software Engr Project I. Final report and presentation are among the deliverables.",
+      "prerequisites"  : ""
+    },
+    {
       "EEL 5769": {
         "title"        : "Computer Architecture",
         "description"  : "This course focuses on advanced topics, including memory hierarchy such as caching and virtual memory, pipelining, multiprocessor systems, instruction, data, and thread level parallelism and other contemporary issues in computer architecture.",
-        "prerequisites": ""
+        "prerequisites": "CEN 4934 for level Undergraduate with minimum grade of C"
       }
     }
   ],
@@ -326,6 +331,65 @@
         "office_hours": [
           {"days": "M W", "hours": "03:00pm - 04:00pm"},
           {"days": "Other", "hours": "By appointment"}
+        ]
+      }
+    },
+    {
+      "202601": {
+        "courses": [
+          {
+            "16778": {
+              "course": "CDA 3104",
+              "days"  : "M W",
+              "times" : "09:00am - 10:15am",
+              "room"  : "HE 402"
+            }
+          },
+          {
+            "16777": {
+              "course": "CDA 3104",
+              "days"  : "M W",
+              "times" : "10:30am - 11:45am",
+              "room"  : "HE 402"
+            }
+          },
+          {
+            "17023": {
+              "course": "COT 3400",
+              "days"  : "M W",
+              "times" : "04:30pm - 05:45pm",
+              "room"  : "HE 224"
+            }
+          },
+          {
+            "10423": {
+              "course": "CEN 4935",
+              "days"  : "F",
+              "times" : "01:30pm - 04:15pm",
+              "room"  : "EH 112"
+            }
+          },
+          {
+            "17115": {
+              "course": "EEL 5769",
+              "days"  : "Distance Learning",
+              "times" : "Virtual",
+              "room"  : "Online"
+            }
+          },
+          {
+            "16367": {
+              "course": "CEN 3941",
+              "days"  : "Distance Learning",
+              "times" : "Virtual",
+              "room"  : "Online"
+            }
+          }
+        ],
+        "office_hours": [
+          {"days": "M W", "hours": "12:00pm - 01:00pm"},
+          {"days": "M W", "hours": "03:00pm - 04:00pm"},
+          {"days": "T H", "hours": "4:30pm - 06:00pm (virtual - by appointment)"}
         ]
       }
     }
