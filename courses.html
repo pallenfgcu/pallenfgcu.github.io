@@ -9,6 +9,7 @@
           integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
     <link href="/Resources/pallenfgcu.css" rel="stylesheet">
+    <link href="/Resources/courses.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="application/javascript" src="/Resources/pallenfgcu.js"></script>
 </head>
@@ -32,207 +33,384 @@
         <h1 class="w3-xxlarge w3-animate-bottom">Courses</h1>
     </div>
 </header>
+<div class="course-grid">
 
-<!-- Row 1 -->
-<div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cop2006_syllabus.html">
+                    COP 2006 Programming I - 3 credit(s)
+                </a>
+            </h3>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cen3941_syllabus.html">CEN 3941 Internship in Software Engr - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
-                <ul id="section_list_cen3941"></ul>
-                <h4>Description</h4>
-                <p>An experiential learning exercise that allows for practical application of knowledge acquired from the software engineering curriculum or program. Applicable to both unpaid and paid internships held within the current academic year or subsequent summer. This work is usually completed off campus and the student will have a qualified supervisor at the site as well as a faculty mentor who will jointly evaluate the student's progress Students are expected to have an internship or offer letter prior to the first day of class. Students without active internships will not be allowed to continue in the class.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 3530 for level Undergraduate with minimum grade of C</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cop2006_syllabus.html">COP 2006 Programming I - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cop2006"></ul>
-                <h4>Description</h4>
-                <p>Introductory computer programming concepts and problem solving skills are learned using a modern
-                    programming language. Principles of good programming style are emphasized. This course is delivered in
-                    C++/Java unless noted otherwise.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 1500 for level Undergraduate with minimum grade of C</p>
-            </div>
-        </div>
-    </div>
+            </details>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4>COP 2001 Programming Methodology - 3 credit(s)</h4>
-                <h4>Sections:</h4>
+            <h4>Description</h4>
+            <p>
+                Introductory computer programming concepts and problem solving skills are
+                learned using a modern programming language. Principles of good programming
+                style are emphasized. This course is delivered in C++/Java unless noted otherwise.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 1500 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                COP 2001 Programming Methodology - 3 credit(s)
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cop2001"></ul>
-                <h4>Description</h4>
-                <p>Advanced computer programming concepts and problem solving are explored using a procedural programming
-                    language and software tools. Topics include pointers, dynamic memory allocation, string handling,
-                    structures, file I/O, and recursion. Includes two hours of lecture and one hour of lab per week.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 2006 for level Undergraduate with minimum grade of C and
-                    MAC 2312 for level Undergraduate with minimum grade of C</p>
-            </div>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                Advanced computer programming concepts and problem solving are explored
+                using a procedural programming language and software tools. Topics include
+                pointers, dynamic memory allocation, string handling, structures, file I/O,
+                and recursion. Includes two hours of lecture and one hour of lab per week.
+            </p>
         </div>
-    </div>
 
+        <hr class="course-card__rule" />
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cop3003_syllabus.html">COP 3003 Programming II - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>
+                COP 2006 for level Undergraduate with minimum grade of C and
+                MAC 2312 for level Undergraduate with minimum grade of C
+            </p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cop3003_syllabus.html">
+                    COP 3003 Programming II - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cop3003"></ul>
-                <h4>Description</h4>
-                <p>Students will expand on their knowledge base and skills gained from introductory programming. Topics
-                    include, but are not limited to, modularity (classes and packages); object-oriented concepts (e.g.,
-                    encapsulation, inheritance, and polymorphism); error handling and exceptions; generics/templates;
-                    dynamic constructs and memory management encompassing pointer arithmetic, parameter passing, and
-                    dereferencing; and reuse of API/frameworks/libraries/packages (e.g., GUI, networking, persistence
-                    storage, and web). Relevant programming environments and tools (e.g., build tools), especially in
-                    the context of software engineering are also experienced. This course is delivered in C++ unless
-                    noted otherwise.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 2006 for level Undergraduate with minimum grade of C</p>
-            </div>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                Students will expand on their knowledge base and skills gained from
+                introductory programming. Topics include modularity, object-oriented
+                concepts, error handling, generics/templates, dynamic memory management,
+                and reuse of APIs and frameworks. This course is delivered in C++ unless
+                noted otherwise.
+            </p>
         </div>
-    </div>
 
+        <hr class="course-card__rule" />
 
-</div> <!-- Row 1 -->
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 2006 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
 
-<!-- Row 2 -->
-<div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cda3104_syllabus.html">
+                    CDA 3104 Computer Organization &amp; Assembly Language Programming - 3 credit(s)
+                </a>
+            </h3>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cda3104_syllabus.html">CDA 3104 Computer Organization &AMP; Assembly Language Programming - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cda3104"></ul>
-                <h4>Description</h4>
-                <p>Covers the basic concepts of computer organization using a computer platform or a simulator and the
-                    corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory
-                    models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with
-                    minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and
-                    COP 2006 for level Undergraduate with minimum grade of C</p>
-            </div>
-        </div>
-    </div>
+            </details>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cda3200_syllabus.html">CDA 3200 Digital Systems &AMP; Architecture - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+            <h4>Description</h4>
+            <p>
+                Covers the basic concepts of computer organization using a computer platform
+                or a simulator and the corresponding assembly language. Topics include Boolean
+                algebra, logic gates, registers, memory models, CPU structures, procedures,
+                stack frames, and interrupt handling.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>
+                (PHY 2048C or PHY 2048 + PHY 2048L) and
+                COP 2006 with minimum grade of C
+            </p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cda3200_syllabus.html">
+                    CDA 3200 Digital Systems &amp; Architecture - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cda3200"></ul>
-                <h4>Description</h4>
-                <p>This course covers design and application of data paths, controllers, memory systems, and registers
-                    involved in digital systems. It discusses aspects of traditional and modern computer architecture.
-                    Design topics include finite state machines, logic gates, and Boolean algebra.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 2006 for level Undergraduate with minimum grade of C and (PHY 2048C for level Undergraduate with
-                    minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for
-                    level Undergraduate with minimum grade of C))</p>
-            </div>
-        </div>
-    </div>
+            </details>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cop3530_syllabus.html">COP 3530 Data Structures &amp; Algorithms - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+            <h4>Description</h4>
+            <p>
+                Covers design and application of data paths, controllers, memory systems,
+                and registers involved in digital systems. Includes finite state machines,
+                logic gates, and Boolean algebra.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>
+                COP 2006 and (PHY 2048C or PHY 2048 + PHY 2048L) with minimum grade of C
+            </p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cop3530_syllabus.html">
+                    COP 3530 Data Structures &amp; Algorithms - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cop3530"></ul>
-                <h4>Description</h4>
-                <p>Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs)
-                    are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees.
-                    Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C</p>
-            </div>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                Data structure design, implementation, application, and analysis are explored.
+                Topics include stacks, queues, linked lists, trees, recursion, and computational
+                complexity of searching and sorting algorithms.
+            </p>
         </div>
-    </div>
 
-</div> <!-- Row 2 -->
+        <hr class="course-card__rule" />
 
-<!-- Row 3 -->
-<div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>
+                COP 3003 and MAD 3107 for level Undergraduate with minimum grade of C
+            </p>
+        </div>
+    </article>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cop3710_syllabus.html">COP 3710 Introduction to Data Engineering - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cot3400_syllabus.html">
+                    COT 3400 Design & Analysis of Algorithms - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
+                <ul id="section_list_cot3400"></ul>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                The design, implementation, analysis, and application of a
+                range of computer algorithms are explored. Function order
+                of growth and amortized analysis are used in analyzing algorithms.
+                A review and extension of data structure topics including trees and
+                graphs are covered. Algorithm design strategies such as divide-and-conquer,
+                the greedy method, and dynamic programming are studied.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 3530 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cop3710_syllabus.html">
+                    COP 3710 Introduction to Data Engineering - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cop3710"></ul>
-                <h4>Description</h4>
-                <p>This course covers database design and applications of database management systems in software
-                    development. It includes relational database management systems (RDBMS) and SQL, and how databases
-                    are accessed in computer programs. It also covers different data formats, i.e. XML, JSON, etc. This
-                    course will also introduce to students the application of NoSQL systems. It will explore topics
-                    related to data analysis.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 3530 for level Undergraduate with minimum grade of C</p>
-            </div>
-        </div>
-    </div>
+            </details>
 
-    <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:260px">
-            <div class="w3-left-align">
-                <h4><a href="Courses/cen4930_syllabus.html">CEN 4930 ST:Embedded Programming - 3 credit(s)</a></h4>
-                <h4>Sections:</h4>
+            <h4>Description</h4>
+            <p>
+                Covers database design and applications of database management systems,
+                relational databases, SQL, data formats such as XML and JSON, and an
+                introduction to NoSQL systems and data analysis concepts.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 3530 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cen3941_syllabus.html">
+                    CEN 3941 Internship in Software Engr - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
+                <ul id="section_list_cen3941"></ul>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                An experiential learning exercise that allows for practical application
+                of knowledge acquired from the software engineering curriculum or program.
+                Applicable to both unpaid and paid internships held within the current
+                academic year or subsequent summer. This work is usually completed off
+                campus and the student will have a qualified supervisor at the site as
+                well as a faculty mentor who will jointly evaluate the student's progress.
+                Students are expected to have an internship or offer letter prior to the
+                first day of class. Students without active internships will not be allowed
+                to continue in the class.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 3530 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/cen4930_syllabus.html">
+                    CEN 4930 ST: Embedded Programming - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
                 <ul id="section_list_cen4930"></ul>
-                <h4>Description</h4>
-                <p>The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within
-                    the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding
-                    of the intricate interplay between software and hardware in embedded systems. This course delves into the
-                    practical aspects of designing, developing, and optimizing software for embedded environments, leveraging
-                    the powerful capabilities of the C++ programming language and Arduino microcontrollers.</p>
-            </div>
-            <hr/>
-            <div class="w3-left-align">
-                <h5>Prerequisite(s)</h5>
-                <p>COP 3003 for level Undergraduate with minimum grade of C</p>
-            </div>
-        </div>
-    </div>
+            </details>
 
-</div> <!-- Row 3 -->
+            <h4>Description</h4>
+            <p>
+                A special topics course focused on embedded programming with C++ and Arduino.
+                Emphasizes the interaction between software and hardware in embedded systems
+                and practical design, development, and optimization techniques.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>COP 3003 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/eel5769_syllabus.html">
+                    EEL 5769 Computer Architecture - 3 credit(s)
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
+                <ul id="section_list_eel5769"></ul>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                This course focuses on advanced topics, including memory
+                hierarchy such as caching and virtual memory, pipelining,
+                multiprocessor systems, instruction, data, and thread level
+                parallelism and other contemporary issues in computer architecture.
+            </p>
+        </div>
+
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>CEN 4934 for level Undergraduate with minimum grade of C</p>
+        </div>
+    </article>
+
+
+</div>
 
 <script type="module">
     import {loadSectList} from "./Courses/syllabi.js";

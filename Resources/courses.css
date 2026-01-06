@@ -1,0 +1,134 @@
+/* Container */
+.course-grid {
+    /* overall page spacing */
+    max-width: 1400px;
+    margin: 16px auto;
+    padding: 0 16px;
+
+    display: grid;
+    gap: 16px;
+
+    /* default: 1 column (mobile-first) */
+    grid-template-columns: 1fr;
+    align-items: stretch;
+}
+
+/* 2 columns: small tablets / large phones */
+@media (min-width: 640px) {
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* 3 columns: laptops / landscape tablets */
+@media (min-width: 960px) {
+    .course-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* 4 columns: desktop */
+@media (min-width: 1280px) {
+    .course-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Cards */
+.course-card {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    /* height constraints you asked for */
+    min-height: 260px;
+    max-height: 520px;
+
+    overflow: hidden; /* makes rounded corners behave */
+}
+
+.course-card__body {
+    padding: 16px;
+    flex: 1 1 auto;
+
+    /* if descriptions get long, scroll inside the card */
+    overflow: auto;
+}
+
+.course-card__footer {
+    padding: 12px 16px 16px 16px;
+}
+
+.course-card__rule {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.course-card__title {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+}
+
+/* keep headings tight */
+.course-card h4 {
+    margin: 12px 0 6px 0;
+    font-size: 0.95rem;
+}
+
+.course-card p,
+.course-card li {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+.course-sections {
+    margin-top: 4px;
+}
+
+.course-sections__summary {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #005ea2;          /* FGCU-ish blue if you want */
+    list-style: none;
+}
+
+/* Remove default disclosure triangle */
+.course-sections summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom indicator */
+.course-sections__summary::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 6px;
+    border-left: 6px solid currentColor;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: transform 0.2s ease;
+}
+
+/* rotate when open */
+.course-sections[open] .course-sections__summary::before {
+    transform: rotate(90deg);
+}
+
+
+.course-sections ul {
+    margin: 8px 0 0 0;
+    padding-left: 16px;
+}
+
+.course-sections li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
