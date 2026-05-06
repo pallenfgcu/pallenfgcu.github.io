@@ -392,6 +392,21 @@
           {"days": "T H", "hours": "4:30pm - 06:00pm (virtual - by appointment)"}
         ]
       }
+    },
+    {
+      "202605": {
+        "courses": [
+          {
+            "52251": {
+              "course": "COP 3530",
+              "days"  : "M W F",
+              "times" : "09:30am - 11:50am",
+              "room"  : "Holmes 402"
+            }
+          }
+        ],
+        "office_hours": [ {"days": "M W", "hours": "12:00pm - 02:00pm"} ]
+      }
     }
   ]
 }
