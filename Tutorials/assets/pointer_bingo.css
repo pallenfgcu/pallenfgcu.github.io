@@ -1,0 +1,34 @@
+
+
+
+.pointer_bingo table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    padding: 4px;
+}
+
+.pointer_bingo_left {
+    text-align: left;
+}
+
+.pointer_bingo_mem {
+    column-width: 3em;
+}
+
+.pointer_bingo_invalid_inst {
+    background-color: lightpink;
+}
+
+.bingo_text_cell {
+    text-align: center;
+}
+
+.pointer_bingo_changed_cell {
+    background-color: #fff3b0;
+}
+
+.pointer_bingo_changed_value {
+    background-color: #ffec80;
+    font-weight: bold;
+}
