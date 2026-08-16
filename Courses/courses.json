@@ -8,11 +8,20 @@
   "email": "pallen@fgcu.edu",
   "courses": [
     {
+      "COP 2006": {
+        "title": "Programming I",
+        "description": "Introductory computer programming concepts and problem-solving skills are learned using a modern\n                    programming language. Principles of good programming style are emphasized. This course is delivered in\n                    C++ unless noted otherwise.",
+        "prerequisites": "COP 1500 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
+      }
+    },
+    {
       "CDA 3104": {
         "title": "Computer Organization & Assembly Language Programming",
         "short_title": "Comp. Orgn. & Assmb. Lang. Prog.",
         "description": "Covers the basic concepts of computer organization using a computer platform or a simulator and the corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.",
-        "prerequisites": "(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and COP 2006 for level Undergraduate with minimum grade of C"
+        "prerequisites": "(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and COP 2006 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
       }
     },
     {
@@ -20,28 +29,41 @@
         "title": "Digital Systems & Architecture",
         "short_title": "Digital Sys. & Arch.",
         "description": "This course covers design and application of data paths, controllers, memory systems, and registers involved in digital systems. It discusses aspects of traditional and modern computer architecture. Design topics include finite state machines, logic gates, and Boolean algebra.",
-        "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C and (PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C))"
-      }
-    },
-    {
-      "COP 2006": {
-        "title": "Programming I",
-        "description": "Introductory computer programming concepts and problem-solving skills are learned using a modern\n                    programming language. Principles of good programming style are emphasized. This course is delivered in\n                    C++ unless noted otherwise.",
-        "prerequisites": "COP 1500 for level Undergraduate with minimum grade of C"
+        "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C and (PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C))",
+        "credit_hours": 3.0
       }
     },
     {
       "COP 3003": {
         "title": "Programming II",
         "description": "Students will expand on their knowledge base and skills gained from introductory programming. Topics include, but are not limited to, modularity (classes and packages); object-oriented concepts (e.g., encapsulation, inheritance, and polymorphism); error handling and exceptions; generics/templates; dynamic constructs and memory management encompassing pointer arithmetic, parameter passing, and dereferencing; and reuse of API/frameworks/libraries/packages (e.g., GUI, networking, persistence storage, and web). Relevant programming environments and tools (e.g., build tools), especially in the context of software engineering are also experienced. This course is delivered in C++ unless noted otherwise.",
-        "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C"
+        "prerequisites": "COP 2006 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
       }
     },
     {
       "COP 3530": {
         "title": "Data Structures and Algorithms",
         "description": "Data structure design, implementation, application, and analysis are explored. Abstract data types (ADTs) are introduced and uses of interfaces is emphasized. Topics include stacks, queues, linked lists, and trees. Recursion is revisited, the O notation is introduced, and computational complexity of searching and sorting algorithms are explored.",
-        "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C"
+        "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C and MAD 3107 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
+      }
+    },
+    {
+      "COP 4020": {
+        "title": "Principles of Programming Languages",
+        "short_title": "Principles of Programming Lang",
+        "description": "This course covers programming language theory and practice, including language design and implementation, theoretical foundations, language translators and interpreters, and exposure to a variety of programming paradigms.",
+        "prerequisites": "COT 4420 for level Undergraduate with minimum grade of C and CEN 3031 for level Undergraduate with minimum grade of C and COP 3530 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
+      }
+    },
+    {
+      "COT 3400": {
+        "title"        : "Design & Analysis of Algorithms",
+        "description"  : "The design, implementation, analysis, and application of a range of computer algorithms are explored. Function order of growth and amortized analysis are used in analyzing algorithms. A review and extension of data structure topics including trees and graphs are covered. Algorithm design strategies such as divide-and- conquer, the greedy method, and dynamic programming are studied.",
+        "prerequisites": "COP 3530 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
       }
     },
     {
@@ -49,7 +71,8 @@
         "title"        : "Internship in Software Engineering",
         "short_title"  : "Internship in Software Engr",
         "description"  : "An experiential learning exercise that allows for practical application of knowledge acquired from the software engineering curriculum or program. Applicable to both unpaid and paid internships held within the current academic year or subsequent summer. This work is usually completed off campus and the student will have a qualified supervisor at the site as well as a faculty mentor who will jointly evaluate the student's progress Students are expected to have an internship or offer letter prior to the first day of class. Students without active internships will not be allowed to continue in the class.",
-        "prerequisites": "COP 3530 for level Undergraduate with minimum grade of C"
+        "prerequisites": "COP 3530 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
       }
     },
     {
@@ -57,26 +80,31 @@
         "title"        : "ST:Embedded Programming",
         "short_title"  : "Embedded Programming",
         "description"  : "The Special Topics: Embedded Programming with C++ and Arduino course is a specialized offering within the Undergraduate Software Engineering Program, designed to provide students with an in-depth understanding of the intricate interplay between software and hardware in embedded systems. This course delves into the practical aspects of designing, developing, and optimizing software for embedded environments, leveraging the powerful capabilities of the C++ programming language and Arduino microcontrollers.",
-        "prerequisites": ""
-      }
-    },
-    {
-      "COT 3400": {
-        "title"        : "Design & Analysis of Algorithms",
-        "description"  : "The design, implementation, analysis, and application of a range of computer algorithms are explored. Function order of growth and amortized analysis are used in analyzing algorithms. A review and extension of data structure topics including trees and graphs are covered. Algorithm design strategies such as divide-and- conquer, the greedy method, and dynamic programming are studied.",
-        "prerequisites": "COP 3530 for level Undergraduate with minimum grade of C"
+        "prerequisites": "",
+        "credit_hours": 3.0
       }
     },
     {
       "CEN 4935"       : "Senior Software Engr Project II",
       "description"    : "This is the second course in a year-long sequence of a senior software project. Students are expected to continue their software project from the first project course, i.e., Senior Software Engr Project I. Final report and presentation are among the deliverables.",
-      "prerequisites"  : ""
+      "prerequisites"  : "",
+      "credit_hours"   : 3.0
+    },
+    {
+      "EEL 4730": {
+        "title"        : "Embedded Programming",
+        "short_title"  : "Embedded Programming",
+        "description"  : "Introduces students to embedded system programming, focusing on software hardware integration, process scheduling, memory management, and I/O control. Emphasizes hands-on design, development, and optimization of efficient, reliable, and responsive embedded applications within computing and software engineering contexts.",
+        "prerequisites": "COP 3003 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
+      }
     },
     {
       "EEL 5769": {
         "title"        : "Computer Architecture",
         "description"  : "This course focuses on advanced topics, including memory hierarchy such as caching and virtual memory, pipelining, multiprocessor systems, instruction, data, and thread level parallelism and other contemporary issues in computer architecture.",
-        "prerequisites": "CEN 4934 for level Undergraduate with minimum grade of C"
+        "prerequisites": "CEN 4934 for level Undergraduate with minimum grade of C",
+        "credit_hours": 3.0
       }
     }
   ],
@@ -406,6 +434,56 @@
           }
         ],
         "office_hours": [ {"days": "M W", "hours": "12:00pm - 02:00pm"} ]
+      }
+    },
+    {
+      "202608": {
+        "courses": [
+          {
+            "87721": {
+              "course": "EEL 4730",
+              "days"  : "M W",
+              "times" : "12:30pm - 1:15pm",
+              "room"  : "HE 402"
+            }
+          },
+          {
+            "85149": {
+              "course": "CDA 3104",
+              "days"  : "M W",
+              "times" : "01:30pm - 2:45pm",
+              "room"  : "HE 202"
+            }
+          },
+          {
+            "87730": {
+              "course": "COP 4020",
+              "days"  : "M W",
+              "times" : "04:30pm - 05:45pm",
+              "room"  : "LIB 443"
+            }
+          },
+          {
+            "86202": {
+              "course": "COT 3400",
+              "days"  : "T R",
+              "times" : "01:30pm - 02:45pm",
+              "room"  : "HE 202"
+            }
+          },
+          {
+            "86203": {
+              "course": "CEN 3941",
+              "days"  : "Distance Learning",
+              "times" : "Virtual",
+              "room"  : "Online"
+            }
+          }
+        ],
+        "office_hours": [
+          {"days": "M W", "hours": "03:00pm - 04:00pm"},
+          {"days": "T H", "hours": "12:00pm - 01:00pm"}
+        ]
       }
     }
   ]

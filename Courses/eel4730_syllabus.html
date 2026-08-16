@@ -15,12 +15,12 @@
 
 <body>
 <!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="nav_sidebar" style="display:none">
+<nav class="w3-sidebar w3-bar-block  w3-animate-left w3-center no-print" id="nav_sidebar" style="display:none">
     <h1 class="w3-large w3-text-theme">Site Navigation</h1>
     <button class="w3-bar-item w3-button w3-large" onclick="nav_sidebar_close()">Close <i class="fa fa-remove"></i></button>
-    <a class="w3-bar-item w3-button w3-large" href="/index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-large" href="/faculty_cv.html">CV</a>
-    <a class="w3-bar-item w3-button w3-large" href="/courses.html">Courses</a>
+    <a class="w3-bar-item w3-button w3-large" href="../index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-large" href="#">CV</a>
+    <a class="w3-bar-item w3-button w3-large" href="../courses.html">Courses</a>
     <a class="w3-bar-item w3-button w3-large" href="#">Service</a>
     <a class="w3-bar-item w3-button w3-large" href="#">Links</a>
 </nav>
@@ -29,7 +29,7 @@
 <header class="w3-container w3-theme w3-padding no-print" id="myHeader">
     <i class="fa fa-bars w3-large w3-button w3-theme" onclick="nav_sidebar_open()"></i>
     <div class="w3-center">
-        <h1 class="w3-xxlarge w3-animate-bottom">CDA 3104 Comp. Orgn. &amp; Assmb. Lang. Prog. - 3 credit(s)</h1>
+        <h1 class="w3-xxlarge w3-animate-bottom">EEL 4730 Embedded Programming - 3 credit(s)</h1>
     </div>
     <div class="w3-right-align">
         <a href="javascript:window.print();">print<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a>
@@ -40,7 +40,7 @@
 <!-- Syllabus body -->
 <div class="w3-row-padding w3-center w3-margin-top w3-margin-bottom">
 
-    <div id="college_info">
+    <div id="college_info" class="w3-padding">
         <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
             <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
             <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- Syllabus card -->
-    <div>
+    <div class="">
 
         <!-- Syllabus sections -->
         <div class="w3-row-padding w3-center w3-small w3-margin-top w3-margin-bottom">
@@ -57,17 +57,21 @@
             <div id="contact_info" class="w3-padding"></div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Course Catalog Description</h1>
-                <p>Covers the basic concepts of computer organization using a computer platform or a simulator and the
-                    corresponding assembly language. Topics include Boolean algebra, logic gates, registers, memory
-                    models, CPU structures, basic assembly instructions, procedures, stack frames, and interrupt handling.</p>
+                <h1 class="w3-medium w3-text-teal">Course Catalog Description:</h1>
+                <p>EEL 4730, Embedded Programming, gives students an in-depth, hands-on understanding of the interplay
+                    between software and hardware in embedded systems. The course covers the practical aspects of
+                    designing, developing, and optimizing software for embedded environments, using the C/C++
+                    programming language together with AVR-based Arduino microcontrollers.</p>
+                <p>Students work through the essential concepts of hardware/software integration, GPIO and analog I/O,
+                    communication protocols (UART, SPI, I2C), process scheduling and state machines, real-time
+                    constraints, interrupt-driven programming, and code optimization for resource-constrained systems.
+                    Lecture and hands-on lab work build toward a team Group Project that applies these concepts to a
+                    real-world embedded application.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Prerequisites</h1>
-                <p>(PHY 2048C for level Undergraduate with minimum grade of C or (PHY 2048 for level Undergraduate with
-                    minimum grade of C and PHY 2048L for level Undergraduate with minimum grade of C)) and
-                    COP 2006 for level Undergraduate with minimum grade of C</p>
+                <h1 class="w3-medium w3-text-teal">Prerequisites:</h1>
+                <p>COP 3003 for level Undergraduate with minimum grade of C</p>
             </div>
 
             <div class="w3-container w3-left-align">
@@ -81,57 +85,36 @@
                 </div>
                 <div class="w3-container w3-left-align">
                     <h1 class="w3-medium w3-text-teal">Software</h1>
-                    <p><b><a href="https://www.microchip.com/en-us/tools-resources/develop/microchip-studio" target="_blank">Microchip Studio for AVR and SAM Devices<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a></b></p>
-                    Additional Software:
                     <ul>
                         <li><b><a href="https://www.arduino.cc" target="_blank">Arduino IDE<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a></b></li>
+                        <li><b><a href="https://www.tinkercad.com" target="_blank">TinkerCad Circuits<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a></b> (free, browser-based). You will join the course's TinkerCad Classes group using your FGCU <b>Eagle</b> email; instructions and the class link will be posted on Canvas.</li>
                     </ul>
                 </div>
-                <div class="w3-container w3-left-align">
-                    <h1 class="w3-medium w3-text-teal">Hardware</h1>
-                        You will be required to purchase an <b>Arduino UNO R3 Kit</b>:<br>
-                        Search Amazon for: <a href="https://www.amazon.com/s?k=arduino+uno+r3+starter+kit&crid=8JY8WYSP48ST&sprefix=arduino+uno+r3+starter+kit%2Caps%2C135&ref=nb_sb_noss_1" target="_blank">Arduino Starter Kit<span style="font-size: xx-small; color: #0000FF;">[&uarr;]</span></a><br>
-                        Select any of these kits like the (Recommended): <b>ELEGOO UNO Project Super Starter Kit with Tutorial and UNO R3 Compatible with Arduino IDE</b>
-                        The kit should contain at a minimum:
-                        <ul>
-                            <li>Arduino UNO R3</li>
-                            <li>Breadboard</li>
-                            <li>Resistors</li>
-                            <li>LEDs</li>
-                            <li>Push buttons</li>
-                            <li>Wires</li>
-                            <li>7-Segment Display (single and 4-digit)</li>
-                            <li>One of:<ul>
-                                <li>DC motor</li>
-                                <li>Stepper Motor w/Driver Board</li>
-                                <li>Servo Motor</li>
-                            </ul></li>
-                            <li>Various additional components, ICs, Sensors, etc.</li>
-                        </ul>
-                </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Learning Outcomes</h1>
-                Upon successful completion of this course, the student will be able to:
-                <ul>
-                    <li>understand the basic microcontroller functionality and how it's used in embedded systems.</li>
-                    <li>be able to write assembly language code for the ATMEL AVR family of microcontrollers.</li>
-                    <li>be able to program the various microcontroller features such as hardware interrupts, timers, I/O ports and serial communications.</li>
-                    <li>be able to design circuitry using simple electronics such as using resisters, capacitors, transistors, diodes, relays, and a power supply in the context of embedded systems.</li>
+                <h1 class="w3-medium w3-text-teal">Learning Outcomes:</h1>
+                <p>By the end of this course, students will be able to:</p>
+                <ul class="w3-ul">
+                    <li><b>LO1</b> Integrate hardware and software components to build functioning embedded systems.</li>
+                    <li><b>LO2</b> Implement process scheduling and task management within resource-constrained embedded environments.</li>
+                    <li><b>LO3</b> Apply code optimization strategies appropriate to memory- and processing-constrained systems.</li>
+                    <li><b>LO4</b> Program external I/O devices and communication protocols (GPIO, analog I/O, UART, SPI, I2C).</li>
+                    <li><b>LO5</b> Apply embedded systems concepts to a real-world application through a team project.</li>
                 </ul>
+                <p>Graduates of this course will be well-prepared to contribute to industries that rely on embedded systems, such as consumer electronics, automotive, healthcare, and industrial automation.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Instructional Methods</h1>
+                <h1 class="w3-medium w3-text-teal">Instructional Methods:</h1>
                 <p>This is a face-to-face course with lectures, instructor led programming examples, and in-class labs.</p>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Attendance</h1>
-                <p>Attendance is mandatory for all classes. Attendance will be taken and will count towards participation credit.
-                Students should notify me at least 48 hours in advance of intent to miss a class to arrange alternate schedules
-                for in-class assignments.</p>
+                <h1 class="w3-medium w3-text-teal">Attendance:</h1>
+                <p>Attendance is mandatory for all classes. Attendance will be taken and will count towards your
+                    Assignments grade. Students should notify me at least 48 hours in advance of intent to miss a
+                    class to arrange alternate schedules for in-class assignments.</p>
             </div>
 
             <div class="w3-container w3-left-align">
@@ -142,28 +125,26 @@
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule</h1>
-                <div class="w3-twothirds w3-padding">
+                <h1 class="w3-medium w3-text-teal">Topics / Tentative Schedule:</h1>
+                <div class=" w3-twothirds w3-padding">
                     <ul class="w3-ul">
-                        <li>Computer Architecture and AVR MCU</li>
-                        <li>Number systems, Binary Arithmetic & Signed Numbers </li>
-                        <li>Basic AVR Assembly Programming</li>
-                        <li>Conditional Branching (if and loops), Time Delays</li>
-                        <li>Exam 1</li>
-                        <li>DC Circuits and Components</li>
-                        <li>AVR I/O Programming</li>
-                        <li>Advanced AVR Programming</li>
-                        <li>AVR Timer Programming</li>
-                        <li>AVR Interrupt Programming</li>
-                        <li>Exam 2</li>
-                        <li>Various Topics: Analog and Digital Sensors, Motors, PWM, SPI, etc.</li>
-                        <li>Group Project Demonstrations</li>
+                        <li>Foundations of Embedded Systems: hardware/software boundaries, embedded vs. general-purpose computing, and the design constraints (cost, power, size, real-time) that shape embedded systems.</li>
+                        <li>GPIO, Analog I/O & Actuators: digital and analog input/output, driving actuators, and interfacing with sensors.</li>
+                        <li>Communication Protocols: UART, SPI, and I2C for device-to-device and device-to-host communication.</li>
+                        <li>Exam 1 (covers all topics to this point)</li>
+                        <li>Scheduling & State Machines: task scheduling and state machine design for embedded control flow.</li>
+                        <li>Real-Time Constraints: worst-case execution time (WCET), jitter, and watchdog timers for responsive, reliable systems.</li>
+                        <li>Interrupts: interrupt-driven programming for rapid, resource-efficient response to hardware events.</li>
+                        <li>Optimization & Resource-Constrained Programming: code and memory optimization strategies for constrained embedded platforms.</li>
+                        <li>Exam 2 (covers all topics since Exam 1)</li>
+                        <li>Group Project: team-based design and implementation of an embedded system applying the semester's concepts.</li>
+                        <li>Group Project Demonstrations (final exam period): in-class demonstration of completed Group Projects. There is no cumulative final exam.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="w3-container w3-left-align">
-                <h1 class="w3-medium w3-text-teal">Assessment</h1>
+                <h1 class="w3-medium w3-text-teal">Assessment:</h1>
                 <p>There is no grace period for late submission of assignments. All assignments with due dates and times will be posted on Canvas. Alternate schedules can be arranged ahead of time with instructor approval.</p>
 
                 <div class="w3-container w3-left-align">
@@ -247,23 +228,22 @@
                     </p>
                 </div>
 
-
                 <div class="w3-row-padding w3-margin-top w3-margin-bottom w3-twothird">
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Assignments (40%):</h1>
-                        <p>Individual problems and small programs worked outside of class.</p>
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Assignments (35%):</h1>
+                        <p>Worksheets, peer reviews, homework, and attendance-based assignments completed individually outside of class.</p>
                     </div>
-                    <div class="w3-padding">
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Quizzes (15%):</h1>
+                        <p>Short in-class quizzes given throughout the semester, one per major topic.</p>
+                    </div>
+                    <div class=" w3-padding">
                         <h1 class="w3-medium w3-text-teal">Exams (30%):</h1>
-                        <p>Written exams taken in class.</p>
+                        <p>Two written exams taken in class. There is no cumulative final exam.</p>
                     </div>
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Group Project (15%):</h1>
-                        <p>Group project combining AVR Assembly programming with basic DC circuits worked outside of class.</p>
-                    </div>
-                    <div class="w3-padding">
-                        <h1 class="w3-medium w3-text-teal">Participation (15%):</h1>
-                        <p>In class quizzes and labs, attendance, and overall participation.</p>
+                    <div class=" w3-padding">
+                        <h1 class="w3-medium w3-text-teal">Group Project (20%):</h1>
+                        <p>Team-based embedded systems project, including an in-class demonstration during the final exam period.</p>
                     </div>
                 </div>
             </div>
@@ -295,12 +275,12 @@
     load(term, crn);
 </script>
 
-
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark no-print">
     <h5><a href="https://www.fgcu.edu" target="_blank">Florida Gulf Coast University</a><br>
         <a href="https://www.fgcu.edu/eng/" target="_blank">U.A. Whitaker College of Engineering</a><br>
-        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a></h5>
+        <a href="https://www.fgcu.edu/eng/softwareengineering/" target="_blank">Department of Computing & Software Engineering</a>
+    </h5>
     <div class="w3-tooltip w3-right" style="position:relative;bottom:55px;">
         <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
         <a class="w3-text-white" href="#myHeader"><span class="w3-large">

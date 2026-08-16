@@ -11,6 +11,68 @@ export const load=(term, crn)=>{
                 hideContactInfo();
             }
         });
+
+    loadGradScale();
+}
+
+export const buildCourseCards = (data, containerSelector = ".course-grid") => {
+    const container = document.querySelector(containerSelector);
+    if (!container || !data.courses) return;
+
+    container.innerHTML = data.courses.map(courseEntry => buildCourseCard(courseEntry)).join("");
+}
+
+function buildCourseCard(courseEntry) {
+    // Course code is the key that isn't a sibling "description"/"prerequisites" field
+    // (a couple of entries in courses.json are malformed and store those as siblings
+    // of the code instead of nested under it).
+    const code = Object.keys(courseEntry).find(k => k !== "description" && k !== "prerequisites");
+    const value = courseEntry[code];
+
+    const title = (typeof value === "object") ? value.title : value;
+    const description = (typeof value === "object") ? value.description : courseEntry.description;
+    const prerequisites = (typeof value === "object") ? value.prerequisites : courseEntry.prerequisites;
+    const creditHours = (typeof value === "object") ? value.credit_hours : courseEntry.credit_hours;
+
+    const crse = code.replace(" ", "").toLowerCase();
+    const creditLabel = (creditHours !== undefined)
+        ? `${parseFloat(creditHours)} credit(s)`
+        : "";
+
+    const prereqSection = prerequisites
+        ? `
+        <hr class="course-card__rule" />
+
+        <div class="course-card__footer">
+            <h4>Prerequisite(s)</h4>
+            <p>${prerequisites}</p>
+        </div>`
+        : "";
+
+    return `
+    <article class="course-card">
+        <div class="course-card__body">
+            <h3 class="course-card__title">
+                <a href="Courses/${crse}_syllabus.html">
+                    ${code} ${title}${creditLabel ? ` - ${creditLabel}` : ""}
+                </a>
+            </h3>
+
+            <h4>Sections:</h4>
+            <details class="course-sections">
+                <summary class="course-sections__summary">
+                    View sections
+                </summary>
+                <ul id="section_list_${crse}"></ul>
+            </details>
+
+            <h4>Description</h4>
+            <p>
+                ${description || ""}
+            </p>
+        </div>
+        ${prereqSection}
+    </article>`;
 }
 
 export const loadSectList=() => {
@@ -54,6 +116,27 @@ function loadSectionLists(data) {
     }
 
 } // loadSectionLists
+
+async function loadGradScale() {
+    const table = document.getElementById("grade_scale");
+    if (!table) return;
+
+    try {
+        const response = await fetch("grade_scale.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        const rows = data.grades
+            .map(({ grade, gpa, range }) => `<tr><td>${grade}</td><td>${gpa}</td><td>${range}</td></tr>`)
+            .join("");
+
+        table.innerHTML = `<thead><tr><th>GRADE</th><th>GPA</th><th>RANGE</th></tr></thead><tbody>${rows}</tbody>`;
+    } catch (err) {
+        console.error("Failed to load grade scale:", err);
+    }
+}
+
+
 
 function parseTerm(term) {
     let ret = '';
